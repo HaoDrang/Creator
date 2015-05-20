@@ -12,8 +12,9 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	private BallDisposer	mBallListController = null;
 	[SerializeField]
 	private BallShooter 	mShooter = null;
-	[SerializeField]
+
 	private LevelConfig[]	mLevelConfig;
+	private LevelConfig 	mCurrentLevelConfig = null;
 	[SerializeField]
 	private Rect			mGameRect;
 	[SerializeField]
@@ -32,14 +33,14 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	{
 		get
 		{
-			return mLevelConfig[(int)meCurLevel];
+			return mCurrentLevelConfig;
 		}
 	}
 	//-----Gets End
 	
 	private IEnumerator ResetGrid()
 	{
-		RegularBall.ColorArray = CurrentLevelConfig.Colors;
+		RegularBall.ColorArray = CurrentLevelConfig.mColors;
 		yield return StartCoroutine (mBallListController.ResetGrid (CurrentLevelConfig));
 		yield return StartCoroutine(mBallListController.StartMoveDown(CurrentLevelConfig));
 		mState = GameState.ROUND_START;
@@ -48,6 +49,11 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 
 	void Start()
 	{
+		// abouve all
+		mLevelConfig = LevelConfig.LoadLevelConfigs ();
+
+		//TODO  THE shooter should not do the initialize here
+		mCurrentLevelConfig = mLevelConfig [(int)LevelEnum.DemiGod].CreateNewConfig (ColorBoard.GetColorArray(1));
 		if (mShooter != null) {
 			mShooter.Init(CurrentLevelConfig, mMainCamera, ColliderCallBack);
 		}

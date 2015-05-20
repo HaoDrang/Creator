@@ -6,4 +6,7 @@ public enum LevelEnum
 	Normal,
 	Hard,
 	Crazy,
+	Overlord,
+	DemiGod,
+	LevelNum,
 }

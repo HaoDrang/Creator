@@ -161,16 +161,16 @@ public class Property
 			if (split.Length == 4) {
 				float f;
 				float.TryParse(split[0], out f);
-				ret.r = f;
+				ret.r = f / 255f;
 				f = 0;
 				float.TryParse(split[1], out f);
-				ret.g = f;
+				ret.g = f / 255f;
 				f = 0;
 				float.TryParse(split[2], out f);
-				ret.b = f;
+				ret.b = f / 255f;
 				f = 0;
 				float.TryParse(split[3], out f);
-				ret.a = f;
+				ret.a = f / 255f;
 			}
 		}
 		return ret;

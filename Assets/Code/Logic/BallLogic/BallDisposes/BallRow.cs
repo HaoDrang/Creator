@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 using System;
 using System.Collections;
@@ -276,7 +276,7 @@ public class BallRow : MonoBehaviour
 			}
 		}
 
-		return MakeRegularBall (conf.Colors.Length, bStatic);
+		return MakeRegularBall (conf.mColors.Length, bStatic);
 	}
 
 	Ball MakePowerUp (SpecialBallType[] eTypes, bool bStatic = false)

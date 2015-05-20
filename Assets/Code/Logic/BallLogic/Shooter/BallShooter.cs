@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -40,8 +40,8 @@ public class BallShooter : MonoBehaviour {
 		mParentTrans = this.transform.parent.GetComponent<RectTransform> ();
         mLevelConfig = lvConf;
 
-		mSmallBallSlot.Init (lvConf.Colors);
-		mBigBallSlot.Init (lvConf.Colors);
+		mSmallBallSlot.Init (lvConf.mColors);
+		mBigBallSlot.Init (lvConf.mColors);
 
 		PrepareSmall (mLevelConfig);
 		PrepareBig ();
@@ -134,7 +134,7 @@ public class BallShooter : MonoBehaviour {
 
 	public void PrepareSmall(LevelConfig lvConf)
 	{
-		mSmallBallSlot.PrepareRandBall (lvConf.Colors.Length);
+		mSmallBallSlot.PrepareRandBall (lvConf.mColors.Length);
 		//mSmallBallSlot.PrepareRandPowerUpBall ();
 	}
 

@@ -8,7 +8,11 @@ public class PreDataLoader : MonoBehaviour
 	public GameObject[] ToBeEnabled;
 	IEnumerator Start()
 	{
+		// above all
 		Property.LoadDictionary(PropertyPath);
+		yield return null;
+		// init managers
+		ColorBoard.Init ();
 		yield return null;
 		for (int i = 0; i < ToBeEnabled.Length; i++) {
 			GameObject obj = ToBeEnabled[i];

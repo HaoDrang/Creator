@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -470,7 +470,7 @@ public class BallDisposer : MonoBehaviour
 
 	public int GetRandBallColor ()
 	{
-		return Random.Range(0, mLevelConfig.Colors.Length);
+		return Random.Range(0, mLevelConfig.mColors.Length);
 	}
 
 }
