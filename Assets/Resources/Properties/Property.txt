@@ -1,0 +1,10 @@
+// the welcome dialog
+creator.welcomedialog.scale = 500, 500
+creator.welcomedialog.position = 0,0
+creator.welcomedialog.anchor.min = 0.5,0.5
+creator.welcomedialog.anchor.max = 0.5,0.5
+
+creator.welcomedialog.btnnext.scale = 200,80
+creator.welcomedialog.btnnext.position = 0,0
+creator.welcomedialog.btnnext.anchor.min = 0.5,0.2
+creator.welcomedialog.btnnext.anchor.max = 0.5,0.2

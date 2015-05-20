@@ -1,0 +1,1155 @@
+fileFormatVersion: 2
+guid: 3473c62cc61017e49b7842ef54bf3f14
+timeCreated: 1430812014
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: B_0_0
+    21300002: B_0_1
+    21300004: B_0_2
+    21300006: B_0_3
+    21300008: B_0_4
+    21300010: B_0_5
+    21300012: B_0_6
+    21300014: B_0_7
+    21300016: B_0_8
+    21300018: B_0_9
+    21300020: B_1_0
+    21300022: B_1_1
+    21300024: B_1_2
+    21300026: B_1_3
+    21300028: B_1_4
+    21300030: B_1_5
+    21300032: B_1_6
+    21300034: B_1_7
+    21300036: B_1_8
+    21300038: B_1_9
+    21300040: ball-rotations_20
+    21300042: ball-rotations_21
+    21300044: ball-rotations_22
+    21300046: ball-rotations_23
+    21300048: ball-rotations_24
+    21300050: ball-rotations_25
+    21300052: ball-rotations_26
+    21300054: ball-rotations_27
+    21300056: ball-rotations_28
+    21300058: ball-rotations_29
+    21300060: ball-rotations_30
+    21300062: ball-rotations_31
+    21300064: ball-rotations_32
+    21300066: ball-rotations_33
+    21300068: ball-rotations_34
+    21300070: ball-rotations_35
+    21300072: ball-rotations_36
+    21300074: ball-rotations_37
+    21300076: ball-rotations_38
+    21300078: ball-rotations_39
+    21300080: ball-rotations_40
+    21300082: ball-rotations_41
+    21300084: ball-rotations_42
+    21300086: ball-rotations_43
+    21300088: ball-rotations_44
+    21300090: ball-rotations_45
+    21300092: ball-rotations_46
+    21300094: ball-rotations_47
+    21300096: ball-rotations_48
+    21300098: ball-rotations_49
+    21300100: ball-rotations_50
+    21300102: ball-rotations_51
+    21300104: ball-rotations_52
+    21300106: ball-rotations_53
+    21300108: ball-rotations_54
+    21300110: ball-rotations_55
+    21300112: ball-rotations_56
+    21300114: ball-rotations_57
+    21300116: ball-rotations_58
+    21300118: ball-rotations_59
+    21300120: ball-rotations_60
+    21300122: ball-rotations_61
+    21300124: ball-rotations_62
+    21300126: ball-rotations_63
+    21300128: ball-rotations_64
+    21300130: ball-rotations_65
+    21300132: ball-rotations_66
+    21300134: ball-rotations_67
+    21300136: ball-rotations_68
+    21300138: ball-rotations_69
+    21300140: ball-rotations_70
+    21300142: ball-rotations_71
+    21300144: ball-rotations_72
+    21300146: ball-rotations_73
+    21300148: ball-rotations_74
+    21300150: ball-rotations_75
+    21300152: ball-rotations_76
+    21300154: ball-rotations_77
+    21300156: ball-rotations_78
+    21300158: ball-rotations_79
+    21300160: ball-rotations_80
+    21300162: ball-rotations_81
+    21300164: ball-rotations_82
+    21300166: ball-rotations_83
+    21300168: ball-rotations_84
+    21300170: ball-rotations_85
+    21300172: ball-rotations_86
+    21300174: ball-rotations_87
+    21300176: ball-rotations_88
+    21300178: ball-rotations_89
+    21300180: ball-rotations_90
+    21300182: ball-rotations_91
+    21300184: ball-rotations_92
+    21300186: ball-rotations_93
+    21300188: ball-rotations_94
+    21300190: ball-rotations_95
+    21300192: ball-rotations_96
+    21300194: ball-rotations_97
+    21300196: ball-rotations_98
+    21300198: ball-rotations_99
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: B_0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_0_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 270
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: B_1_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_22
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_23
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_24
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_26
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_28
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_29
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_30
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_32
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_33
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_34
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_36
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 94
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_40
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 183
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_42
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_43
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_44
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_45
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_46
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_47
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_48
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_49
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_50
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 138
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_52
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_53
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_54
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 73
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_55
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_56
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_57
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_58
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_59
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 73
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_61
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 55
+        width: 18
+        height: 18
+      alignment: 9
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_63
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_64
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_65
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_66
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_67
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_68
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_70
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_71
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_72
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_73
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_74
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_75
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_76
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_78
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 55
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_79
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 37
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_81
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_82
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_83
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_84
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_85
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_86
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_87
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_88
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_89
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_91
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_92
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_93
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_94
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_95
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_96
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_97
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ball-rotations_99
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
