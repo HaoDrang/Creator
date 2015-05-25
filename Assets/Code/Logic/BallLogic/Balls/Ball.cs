@@ -128,6 +128,30 @@ public class Ball : MonoBehaviour
 		Waste();
 	}
 
+	public void DoFadeOutAndBoom(float delayTime)
+	{
+		if (mRow != null) {
+			mRow.SetBall (null, miBallIndex);
+		}
+
+		GetComponent<Collider2D> ().enabled = false;
+		GetComponent<Rigidbody2D> ().isKinematic = false;
+
+		Invoke ("FadeAndBoomImmediatly", delayTime);
+	}
+
+	void FadeAndBoomImmediatly()
+	{
+
+		GameObject boomObj = PrefabMgr.Instance.CreateCopy(BallDefines.BALL_BOOM_EFFECT_NAME);
+
+		boomObj.transform.position = transform.position;
+		boomObj.transform.localScale = Vector3.one;
+
+		Destroy(boomObj, 1f);
+		Waste();
+	}
+
 	public void ShootOut ()
 	{
 		//play a partical here

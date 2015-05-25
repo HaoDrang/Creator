@@ -8,4 +8,5 @@ public class BallDefines
 	//---------String-------------------------------------------------
 	public const string SHOOTER_OBJECT_NAME = "Shooter";
 	public const string BORDER_KEY_WORD	= "BORDER";
+	public const string BALL_BOOM_EFFECT_NAME = "BallBoom";
 }

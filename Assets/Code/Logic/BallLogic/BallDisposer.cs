@@ -14,6 +14,9 @@ public class BallDisposer : MonoBehaviour
 	private BallGrid mGrid = null;
 	[SerializeField]
 	private PushRawProgress mPushProgress = null;
+	[SerializeField]
+	private float mFadeDelayDelta = 0.1f;
+
 	private DisposerState mState = DisposerState.Idle;
 	private bool mbOffsetRow = false;
 	private Stack<BallRow> mReverseRows = new Stack<BallRow>();
@@ -327,10 +330,13 @@ public class BallDisposer : MonoBehaviour
 
 	public void RemoveMatchingBalls (Ball ball, LevelConfig lvConf)
 	{
+
 		Ball[] balls = mGrid.GetMatchingBalls (ball);
+		float fadeDelay = 0;
 		if (balls.Length >= lvConf.mMatchingBallCount) {
 			foreach (var b in balls) {
-				b.DoFadeOut();
+				b.DoFadeOutAndBoom(fadeDelay);
+				fadeDelay += mFadeDelayDelta;
 			}
 		}
 	}
