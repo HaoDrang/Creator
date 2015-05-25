@@ -29,7 +29,7 @@ public class BigBallSlot : MonoBehaviour
 		mCurrentColors = colors;
 	}
 
-	void Start()
+	void Awake()
 	{
 		SlideTo = SlideTarget.localPosition.y;
 	}

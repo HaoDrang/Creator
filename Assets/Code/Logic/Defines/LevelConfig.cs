@@ -31,16 +31,16 @@ public class LevelConfig
 		return this;
 	}
 
-	const string LevelConfigKey = "levelconfig";
-	const string LevelNameKey = "levelname";
-	const string WidthKey = "width";
-	const string ColorCountKey = "colorcount";
-	const string EmptyOddsKey = "emptyodds";
-	const string MoveDownCountKey = "movedowncount";
-	const string MatchingBallCountKey = "matchingballcount";
-	const string PushProgressKey = "pushprogress";
+	const string LevelConfigKey 		= "levelconfig";
+	const string LevelNameKey 			= "levelname";
+	const string WidthKey 				= "width";
+	const string ColorCountKey 			= "colorcount";
+	const string EmptyOddsKey 			= "emptyodds";
+	const string MoveDownCountKey 		= "movedowncount";
+	const string MatchingBallCountKey 	= "matchingballcount";
+	const string PushProgressKey 		= "pushprogress";
 	const string PowerUpDelayInitialKey = "powerupdelayinitial";
-	const string PowerUpDelay = "powerupdelay";
+	const string PowerUpDelay 			= "powerupdelay";
 
 	public static LevelConfig[] LoadLevelConfigs()
 	{
