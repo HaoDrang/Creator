@@ -1,23 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\Achievement\Conditions.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\BallLogic\BallDisposer.cs" Line="258" Column="1" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="46" Column="15" />
+      <File FileName="Assets\Code\FrameWork\PropertyManager\Property.cs" Line="66" Column="15" />
+      <File FileName="Assets\Code\Logic\Events\GameEvent.cs" Line="2" Column="22" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\Conditions.cs" Line="14" Column="2" />
       <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementDetection.cs" Line="5" Column="2" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="6" Column="34" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\Conditions.cs" Line="1" Column="24" />
-      <File FileName="Assets\Code\Logic\Defines\LevelEnum.cs" Line="8" Column="1" />
-      <File FileName="Assets\Code\FrameWork\PropertyManager\Property.cs" Line="15" Column="32" />
-      <File FileName="Assets\Code\FrameWork\Tool\PreDataLoader.cs" Line="23" Column="2" />
-      <File FileName="Assets\Code\FrameWork\UI\ColorBoard.cs" Line="23" Column="31" />
-      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="256" Column="73" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementDetection.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\BallLogic\Shooter\BallShooter.cs" line="137" />
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\PlayLogic\Main.cs" line="56" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
