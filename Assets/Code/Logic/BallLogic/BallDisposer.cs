@@ -182,7 +182,7 @@ public class BallDisposer : MonoBehaviour
 	public IEnumerator StartMoveDown (LevelConfig conf)
 	{
 		mNeedToPush = 1;
-		mTargetDistance = conf.mMoveDownCount * Configs.BALL_SIZE.y + Configs.BALL_HALF_SIZE.y + mGameRect.rect.height / 2 + mGameRect.rect.y;
+		mTargetDistance = (conf.mMoveDownCount + 1) * Configs.BALL_SIZE.y + Configs.BALL_HALF_SIZE.y + mGameRect.rect.height / 2 + mGameRect.rect.y;
 		mState = DisposerState.Pusing;
 
 		while (mState == DisposerState.Pusing || mState == DisposerState.ReadyToPush) {
@@ -208,7 +208,7 @@ public class BallDisposer : MonoBehaviour
 		// upper row
 		BallRow upRow = mGrid.GetRow (curRNum - 1);
 		if (upRow != null) {
-			Debug.Log("UprowIndex:" + upRow.GetNumber());
+//			Debug.Log("UprowIndex:" + upRow.GetNumber());
 			if (bOffset) {
 				if (upRow.GetBall(hitBIdx) == null) {
 					mPosibleSlots.Add(new IdxNPos(curRNum - 1, hitBIdx, hitBallPos.x - Configs.BALL_HALF_SIZE.x, hitBallPos.y + Configs.BALL_SIZE.y));
@@ -254,8 +254,7 @@ public class BallDisposer : MonoBehaviour
 		// next row
 		BallRow nextRow = mGrid.GetRow (curRNum + 1);
 		if (nextRow != null) {
-			Debug.Log("NextRowIndex:" + nextRow.GetNumber());
-			
+//			Debug.Log("NextRowIndex:" + nextRow.GetNumber());
 			if (bOffset) {
 				if (nextRow.GetBall(hitBIdx) == null) {
 					mPosibleSlots.Add(new IdxNPos(curRNum + 1, hitBIdx, hitBallPos.x - Configs.BALL_HALF_SIZE.x, hitBallPos.y - Configs.BALL_SIZE.y));

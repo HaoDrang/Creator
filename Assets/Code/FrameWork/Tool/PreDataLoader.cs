@@ -6,6 +6,17 @@ public class PreDataLoader : MonoBehaviour
 	[SerializeField]
 	private string PropertyPath = "";
 	public GameObject[] ToBeEnabled;
+
+	void Awake()
+	{
+		for (int i = 0; i < ToBeEnabled.Length; i++) {
+			GameObject obj = ToBeEnabled[i];
+			if (obj != null) {
+				obj.SetActive(false);
+			}
+		}
+	}
+
 	IEnumerator Start()
 	{
 		// above all
