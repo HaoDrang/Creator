@@ -238,4 +238,12 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 		shooter.GetComponent<BallShooter> ().PrepareSmall (eBallType, (int)spBallType);
 		yield break;
 	}
+
+	//----------------------------------------------------
+	// Event System AchievementDetector
+	//----------------------------------------------------
+	public AchievementDetection AchievementDetector {
+		get;
+		set;
+	}
 }

@@ -98,3 +98,20 @@ colorboard.1.4	= 89,93,157,255
 colorboard.1.5	= 232,68,136,255
 colorboard.1.6	= 97,187,161,255
 
+//Achievements
+achievement.count = 3
+
+achievement.0.keyname = "shootonce"
+achievement.0.displayname = "Shoot! Once!"
+achievement.0.event = 17
+achievement.0.eventmax = 1
+
+achievement.1.keyname = "shoot3times"
+achievement.1.displayname = "Shoot! 3 Times!"
+achievement.1.event = 17
+achievement.1.eventmax = 3
+
+achievement.2.keyname = "shoot6times"
+achievement.2.displayname = "Shoot! Six Times!"
+achievement.2.event = 17
+achievement.2.eventmax = 6
