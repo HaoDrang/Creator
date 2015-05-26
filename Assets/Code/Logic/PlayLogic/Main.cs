@@ -50,7 +50,7 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	void Start()
 	{
 		// abouve all
-		mLevelConfig = LevelConfig.LoadLevelConfigs ();
+		mLevelConfig = LevelConfig.LoadLevelConfigs (Property.Instante);
 
 		//TODO  THE shooter should not do the initialize here
 		mCurrentLevelConfig = mLevelConfig [(int)LevelEnum.Easy].CreateNewConfig (ColorBoard.GetColorArray(1));

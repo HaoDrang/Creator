@@ -14,7 +14,7 @@ public class TestBaseDialog : MonoBehaviour
 		Dialog dia = obj.GetComponent<Dialog>();
 		dia.Init("creator.welcomedialog");
 
-		dia.CreateButton("btnnext");
+//		dia.CreateButton("btnnext");
 
 		obj.SetActive(true);
 	}

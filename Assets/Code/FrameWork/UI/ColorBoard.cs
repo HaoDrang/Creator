@@ -10,22 +10,22 @@ public class ColorBoard : MonoBehaviour
 	const string ColorCountKey = "colorcount";
 	static List<Color[]> mData = new List<Color[]>();
 
-	public static void Init()
+	public static void Init(Property props)
 	{
-		LoadColors ();
+		LoadColors (props);
 	}
 
-	public static void LoadColors()
+	public static void LoadColors(Property prop)
 	{
 		string colorKey = "";
 		for (int iG = 0; iG < MAX_COLOR_GROUP_COUNT; iG++) 
 		{
-			int colorCount = Property.GetInt(COLOR_BOARD_KEY + "." + iG + "." + ColorCountKey);
+			int colorCount = prop.GetInt(COLOR_BOARD_KEY + "." + iG + "." + ColorCountKey);
 			Color[] colors = new Color[colorCount];
 			for (int iC = 0; iC < colorCount; iC++) 
 			{
 				colorKey 	= COLOR_BOARD_KEY + "." + iG + "." + iC;
-				Color cl 	= Property.GetColor(colorKey);
+				Color cl 	= prop.GetColor(colorKey);
 				colors[iC] 	= cl;
 			}
 			if (colorCount > 0) {

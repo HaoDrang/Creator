@@ -20,10 +20,11 @@ public class PreDataLoader : MonoBehaviour
 	IEnumerator Start()
 	{
 		// above all
-		Property.LoadDictionary(PropertyPath);
+		Property.Instante.LoadDictionary(PropertyPath);
+		Property props = Property.Instante;
 		yield return null;
 		// init managers
-		ColorBoard.Init ();
+		ColorBoard.Init (props);
 		yield return null;
 		for (int i = 0; i < ToBeEnabled.Length; i++) {
 			GameObject obj = ToBeEnabled[i];

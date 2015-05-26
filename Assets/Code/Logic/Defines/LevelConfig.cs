@@ -42,22 +42,22 @@ public class LevelConfig
 	const string PowerUpDelayInitialKey = "powerupdelayinitial";
 	const string PowerUpDelay 			= "powerupdelay";
 
-	public static LevelConfig[] LoadLevelConfigs()
+	public static LevelConfig[] LoadLevelConfigs(Property prop)
 	{
         LevelConfig[] lcArray = new LevelConfig[(int)LevelEnum.LevelNum];
 		string key = "";
 		for (int i = 0; i < (int)LevelEnum.LevelNum; i++) {
 			key = LevelConfigKey + "." + ((LevelEnum)i).ToString().ToLower() + ".";
 			LevelConfig lc = new LevelConfig();
-			lc.levelName = Property.GetString(key + LevelNameKey);
-			lc.mWidth = Property.GetIntArray(key + WidthKey);
-			lc.miColorCount = Property.GetInt(key + ColorCountKey);
-			lc.mEmptyOdds = Property.GetInt(key + EmptyOddsKey);
-			lc.mMoveDownCount = Property.GetInt(key + MoveDownCountKey);
-			lc.mMatchingBallCount = Property.GetInt(key + MatchingBallCountKey);
-			lc.mPushProgress = Property.GetInt(key + PushProgressKey);
-			lc.mPowerUpDelayInitial = Property.GetIntArray(key + PowerUpDelayInitialKey);
-			lc.mPowerUpDelay = Property.GetIntArray(key + PowerUpDelay);
+			lc.levelName = prop.GetString(key + LevelNameKey);
+			lc.mWidth = prop.GetIntArray(key + WidthKey);
+			lc.miColorCount = prop.GetInt(key + ColorCountKey);
+			lc.mEmptyOdds = prop.GetInt(key + EmptyOddsKey);
+			lc.mMoveDownCount = prop.GetInt(key + MoveDownCountKey);
+			lc.mMatchingBallCount = prop.GetInt(key + MatchingBallCountKey);
+			lc.mPushProgress = prop.GetInt(key + PushProgressKey);
+			lc.mPowerUpDelayInitial = prop.GetIntArray(key + PowerUpDelayInitialKey);
+			lc.mPowerUpDelay = prop.GetIntArray(key + PowerUpDelay);
 			lcArray[i] = lc;
 		}
 		return lcArray;

@@ -36,20 +36,20 @@ public class Dialog : MonoBehaviour
 		cr.SetAlpha(0);
 		yield return null;
 		// build UI
-		BuildUI();
+		BuildUI(Property.Instante);
 		yield return null;
 		cr.SetAlpha(1);
 		mUIReady = true;
 		yield break;
 	}
 
-	virtual protected void BuildUI()
+	virtual protected void BuildUI(Property prop)
 	{
 		RectTransform rt = GetComponent<RectTransform>();
-		ScaleAndPosition(rt, key);
+		ScaleAndPosition(rt, key, prop);
 	}
 
-	public Button CreateButton(string buttonKey)
+	public Button CreateButton(string buttonKey, Property prop)
 	{
 		if (mButtonPrefab != null) {
 			string fullBtnKey = key + "." + buttonKey;
@@ -58,7 +58,7 @@ public class Dialog : MonoBehaviour
 			RectTransform rt = obj.GetComponent<RectTransform>();
 			rt.SetParent(transform);
 			rt.localScale = Vector3.one;
-			ScaleAndPosition(rt, fullBtnKey);
+			ScaleAndPosition(rt, fullBtnKey, prop);
 
 			// set button sprite
 			obj.SetActive(true);
@@ -71,7 +71,7 @@ public class Dialog : MonoBehaviour
 		}
 	}
 
-	public Text GreateText(string textKey)
+	public Text GreateText(string textKey, Property prop)
 	{
 		if (mTextPrefab != null) {
 			string fullTextKey = key + "." + textKey;
@@ -79,13 +79,13 @@ public class Dialog : MonoBehaviour
 			obj.transform.localScale = Vector3.one;
 			RectTransform rt = obj.GetComponent<RectTransform>();
 			rt.localScale = Vector3.one;
-			ScaleAndPosition(rt, fullTextKey);
+			ScaleAndPosition(rt, fullTextKey, prop);
 			obj.SetActive(true);
 
 			Text t = obj.GetComponent<Text>();
-			t.fontSize = Property.GetInt(fullTextKey + "." + FontSizeKey);
-			t.fontStyle = (FontStyle)Property.GetInt(fullTextKey + "." + FontStyleKey);
-			t.text = Property.GetString(fullTextKey + "." + ContentKey);
+			t.fontSize = prop.GetInt(fullTextKey + "." + FontSizeKey);
+			t.fontStyle = (FontStyle)prop.GetInt(fullTextKey + "." + FontStyleKey);
+			t.text = prop.GetString(fullTextKey + "." + ContentKey);
 
 			return t;
 		}	
@@ -98,19 +98,19 @@ public class Dialog : MonoBehaviour
 
 	//TODO MAKE A SPrite loader
 
-	protected void ScaleAndPosition (RectTransform rt, string fullBtnKey)
+	protected void ScaleAndPosition (RectTransform rt, string fullBtnKey, Property prop)
 	{
 		// change Scale
-		Vector2 size = Property.GetVector2(fullBtnKey + "." + ScaleKey);
+		Vector2 size = prop.GetVector2(fullBtnKey + "." + ScaleKey);
 		rt.sizeDelta = size;
 
 		// change Position
-		Vector2 pos = Property.GetVector2(fullBtnKey + "." + PositionKey);
+		Vector2 pos = prop.GetVector2(fullBtnKey + "." + PositionKey);
 		rt.localPosition = pos;
 
 
-		Vector2 acMin = Property.GetVector2(fullBtnKey + "." + AnchorKey + "." + Min);
-		Vector2 acMax = Property.GetVector2(fullBtnKey + "." + AnchorKey + "." + Max);
+		Vector2 acMin = prop.GetVector2(fullBtnKey + "." + AnchorKey + "." + Min);
+		Vector2 acMax = prop.GetVector2(fullBtnKey + "." + AnchorKey + "." + Max);
 
 		rt.anchorMin = acMin;
 		rt.anchorMax = acMax;
