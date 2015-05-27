@@ -168,13 +168,15 @@ public class Ball : MonoBehaviour
 		mBallType = bt;
 	}
 
-	virtual public void Fall ()
+	virtual public void Fall (float delay)
 	{
 		gameObject.layer = Layers.FallingBall;
 		Rigidbody2D rb2d = GetComponent<Rigidbody2D> ();
 		rb2d.isKinematic = false;
 		rb2d.gravityScale = 1f;
-		mRow.UnlinkBall (miBallIndex);
+		if (mRow != null) {
+			mRow.UnlinkBall (miBallIndex);
+		}
 	}
 
 	virtual public bool IsPowerUp()
@@ -191,5 +193,9 @@ public class Ball : MonoBehaviour
 	public void SetColliderCallback (BoolDelegate_GObj_GObj mColliderCallback)
 	{
 		this.mTrigerCallBack = mColliderCallback;
+	}
+
+	virtual public void ConsumeFade ()
+	{
 	}
 }

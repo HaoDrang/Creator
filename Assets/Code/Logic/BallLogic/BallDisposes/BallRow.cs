@@ -318,7 +318,7 @@ public class BallRow : MonoBehaviour
 		for (int i = 0; i < mBalls.Length; i++) {
 			Ball b = mBalls[i];
 			if (b != null) {
-				b.Fall();
+				b.Fall(0);
 				yield return new WaitForSeconds (0.1f);
 			}
 		}

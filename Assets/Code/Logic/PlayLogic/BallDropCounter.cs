@@ -24,5 +24,6 @@ public class BallDropCounter : MonoBehaviour
 			break;
 			}
 		}
+		b.ConsumeFade ();
 	}
 }

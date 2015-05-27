@@ -16,6 +16,8 @@ public class BallDisposer : MonoBehaviour
 	private PushRawProgress mPushProgress = null;
 	[SerializeField]
 	private float mFadeDelayDelta = 0.1f;
+	[SerializeField]
+	private float mDropDelayDelta = 0.15f;
 
 	private DisposerState mState = DisposerState.Idle;
 	private bool mbOffsetRow = false;
@@ -26,6 +28,7 @@ public class BallDisposer : MonoBehaviour
 	private bool HasPowerUps{ get{ return !mbBonusRound; } }
 	private bool mbRevers = false;
 	private LevelConfig mLevelConfig = null;
+
 	private struct IdxNPos
 	{
 		public IdxNPos(int r, int i, float x, float y)
@@ -343,8 +346,10 @@ public class BallDisposer : MonoBehaviour
 	public void RemoveLooseBalls ()
 	{
 		Ball[] balls = mGrid.GetLooseBalls ();
+		float delay = 0;
 		foreach (var b in balls) {
-			b.Fall();
+			b.Fall(delay);
+			delay += mDropDelayDelta;
 		}
 	}
 

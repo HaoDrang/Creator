@@ -51,9 +51,9 @@ public class SpecialBall : Ball
 		return true;
 	}
 
-	public override void Fall ()
+	public override void Fall (float delay)
 	{
-		base.Fall ();
+		base.Fall (delay);
 	}
 
 	public override int GetBallTypeCode ()

@@ -1,20 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposer.cs">
     <Files>
-      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="317" Column="3" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\PreDataLoader.cs" Line="35" Column="37" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs" Line="31" Column="3" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="37" Column="30" />
-      <File FileName="Assets\Code\Logic\Events\GameEvent.cs" Line="12" Column="18" />
-      <File FileName="Assets\Code\Logic\Defines\BallDefines.cs" Line="12" Column="2" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Test\SpecialCreaterTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Test\ColorChangeTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\PlayLogic\BallDropCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\Ball.cs" Line="171" Column="39" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\RegularBall.cs" Line="83" Column="15" />
+      <File FileName="Assets\Code\Logic\Defines\BallDefines.cs" Line="13" Column="54" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\BallEffects\ShakeBall.cs" Line="15" Column="1" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\SpecialBall.cs" Line="56" Column="19" />
+      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="321" Column="13" />
+      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposer.cs" Line="352" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\BallLogic\Shooter\BallShooter.cs" line="137" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

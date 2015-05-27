@@ -7,6 +7,8 @@ public class RegularBall : Ball
 	const string PrefabName			= "RegularBall";
 	protected int miColor = 0;
 	protected static Color[] mColors = null;
+	[SerializeField]
+	protected ShakeBall mShake = null;
 
 	public static Color[] ColorArray {
 		set {
@@ -56,6 +58,29 @@ public class RegularBall : Ball
 	protected void UpdateColor ()
 	{
 		mImage.color =  mColors[miColor];
+	}
+
+	public override void ConsumeFade ()
+	{
+		//create an effect here
+		//GameObject consumeEffect = PrefabMgr.Instance.CreateCopy (BallDefines.REGULAR_BALL_CONSUME_EFFECT_NAME);
+		Destroy (gameObject);
+	}
+
+	public override void Fall (float delay)
+	{
+		mRow.UnlinkBall (miBallIndex);
+		Invoke ("Shake", delay);
+
+	}
+	void Shake()
+	{
+		mShake.Shake (ShakeDone);
+	}
+
+	void ShakeDone()
+	{
+		base.Fall (0);
 	}
 }
 
