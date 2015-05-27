@@ -30,8 +30,12 @@ public class AchievementData
 		}
 	}
 
-	public void RegisterAllEvents ()
+	public void RegisterAllEvents (AchievementDetection adt)
 	{
-
+		foreach (var item in mAchievements) {
+			if (item.Value != null) {
+				item.Value.RegisterEventHandlers(adt);
+			}
+		}
 	}
 }

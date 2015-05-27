@@ -1,19 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs">
     <Files>
-      <File FileName="Creator.sln" Line="40" Column="10" />
-      <File FileName="Assets\Code\Logic\Events\GameEvent.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\FrameWork\PropertyManager\Property.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs" Line="30" Column="3" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementDetection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\FrameWork\Defines\DelegateDefines.cs" Line="1" Column="1" />
-      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="256" Column="73" />
-      <File FileName="Assets\Code\Logic\PlayLogic\PreDataLoader.cs" Line="37" Column="16" />
-      <File FileName="Assets\Code\Logic\Defines\Configs.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Defines\BallDefines.cs" Line="12" Column="38" />
-      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\PlayLogic\Main.cs" Line="1" Column="1" />
+      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="317" Column="3" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\PlayLogic\PreDataLoader.cs" Line="35" Column="37" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\AchievementData.cs" Line="31" Column="3" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="37" Column="30" />
+      <File FileName="Assets\Code\Logic\Events\GameEvent.cs" Line="12" Column="18" />
+      <File FileName="Assets\Code\Logic\Defines\BallDefines.cs" Line="12" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

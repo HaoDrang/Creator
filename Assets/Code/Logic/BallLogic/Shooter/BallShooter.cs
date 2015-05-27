@@ -24,13 +24,14 @@ public class BallShooter : MonoBehaviour {
 	private const string RegularPrefabName			= "RegularBall";
 	private const string SpecialPrefabName			= "SpecialBall";
 	private bool mbPreventShooter = false;
+	private AchievementDetection mDetector = null;
 
 	void Start()
 	{
 		gameObject.name = BallDefines.SHOOTER_OBJECT_NAME;
 	}
 
-	public void Init(LevelConfig lvConf, Camera cam, BoolDelegate_GObj_GObj colCb = null)
+	public void Init(LevelConfig lvConf, Camera cam, BoolDelegate_GObj_GObj colCb = null, AchievementDetection detector = null)
 	{
 		Vector3 pos = transform.position;
 		Vector2 sp = RectTransformUtility.WorldToScreenPoint (cam, pos);
@@ -39,6 +40,8 @@ public class BallShooter : MonoBehaviour {
 		mCollideCallBack = colCb;
 		mParentTrans = this.transform.parent.GetComponent<RectTransform> ();
         mLevelConfig = lvConf;
+
+		mDetector = detector;
 
 		mSmallBallSlot.Init (lvConf.mColors);
 		mBigBallSlot.Init (lvConf.mColors);
@@ -80,8 +83,12 @@ public class BallShooter : MonoBehaviour {
 		mShockMove.Shock ();
 		ballType = mBigBallSlot.GetBallType();
 		CreateBallAndAddForce (ballType, mBigBallSlot.BallColorInfo);
+
+		mDetector.FireEvent (GameEvent.BallShoot, ballType, mBigBallSlot.BallColorInfo, mLevelConfig);
+
 		PrepareBig (mSmallBallSlot.BallType, mSmallBallSlot.BallColorInfo);
 		PrepareSmall (mLevelConfig);
+
 		return true;
     }
 

@@ -9,11 +9,24 @@ public class AchievementDetection
 	public void Init(AchievementData data)
 	{
 		mData = data;
-		mData.RegisterAllEvents ();
+		mData.RegisterAllEvents (this);
 	}
 
 	public void RegisterEvent (GameEvent eve, BoolDelegate_E_Args eventHandler)
 	{
-		mEvtDic [eve] += eventHandler;
+		if (!mEvtDic.ContainsKey (eve)) {
+			mEvtDic.Add (eve, eventHandler);
+		} else {
+			mEvtDic[eve] += eventHandler;
+		}
+	}
+
+	public void FireEvent (GameEvent eventType, params object[] args)
+	{
+		BoolDelegate_E_Args eventFunctionList = null;
+		mEvtDic.TryGetValue (eventType, out eventFunctionList);
+		if (eventFunctionList != null) {
+			eventFunctionList(eventType, args);
+		}
 	}
 }

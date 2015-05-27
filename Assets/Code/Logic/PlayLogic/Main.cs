@@ -55,7 +55,7 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 		//TODO  THE shooter should not do the initialize here
 		mCurrentLevelConfig = mLevelConfig [(int)LevelEnum.Easy].CreateNewConfig (ColorBoard.GetColorArray(1));
 		if (mShooter != null) {
-			mShooter.Init(CurrentLevelConfig, mMainCamera, ColliderCallBack);
+			mShooter.Init(CurrentLevelConfig, mMainCamera, ColliderCallBack, AchievementDetector);
 		}
 	}
 

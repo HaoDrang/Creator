@@ -39,11 +39,18 @@ public class SingleAchievement
 
 	virtual public void RegisterEventHandlers(AchievementDetection adt)
 	{
-		adt.RegisterEvent (GameEvent.BallCollide, EventHandler);
+		for (int i = 0; i < miaEvents.Length; i++) {
+			adt.RegisterEvent((GameEvent)miaEvents[i], EventHandler);
+		}
 	}
 
 	virtual public bool EventHandler(GameEvent eEventType, params object[] args)
 	{
+		string argString = "";
+		for (int i = 0; i < args.Length; i++) {
+			argString += args[i] + ",";
+		}
+		Debug.Log ("Default Event Handler " + eEventType.ToString() + ":" + argString);
 		return true;
 	}
 
