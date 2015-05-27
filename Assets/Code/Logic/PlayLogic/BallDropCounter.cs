@@ -23,7 +23,7 @@ public class BallDropCounter : MonoBehaviour
 			default:
 			break;
 			}
+			b.ConsumeFade ();
 		}
-		b.ConsumeFade ();
 	}
 }
