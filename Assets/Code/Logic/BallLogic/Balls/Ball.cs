@@ -42,6 +42,10 @@ public class Ball : MonoBehaviour
 				mTrigerCallBack = null;
 			}
 		}
+
+//		Debug.Log ("Collision:" + target.contacts[0].point.ToString());
+		GameObject obj = PrefabMgr.Instance.CreateCopy (BallDefines.BALL_SHOCKWAVE);
+		obj.transform.position = new Vector3 (target.contacts[0].point.x, target.contacts[0].point.y, target.gameObject.transform.position.z - 2f);
 	}
 
 	virtual public void Init(BallRow row)
