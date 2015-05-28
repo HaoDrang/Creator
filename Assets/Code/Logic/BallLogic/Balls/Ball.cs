@@ -149,7 +149,9 @@ public class Ball : MonoBehaviour
 
 		GameObject boomObj = PrefabMgr.Instance.CreateCopy(BallDefines.BALL_BOOM_EFFECT_NAME);
 
-		boomObj.transform.position = transform.position;
+		Vector3 pos = transform.position;
+		pos.z -= 2f;
+		boomObj.transform.position = pos;
 		boomObj.transform.localScale = Vector3.one;
 
 		Destroy(boomObj, 1f);
