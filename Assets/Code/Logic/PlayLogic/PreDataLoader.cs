@@ -5,10 +5,13 @@ public class PreDataLoader : MonoBehaviour
 {
 	[SerializeField]
 	private string PropertyPath = "";
+	[SerializeField]
+	private int TargetFrameRate = 10;
 	public GameObject[] ToBeEnabled;
 
 	void Awake()
 	{
+		Application.targetFrameRate = TargetFrameRate;
 		for (int i = 0; i < ToBeEnabled.Length; i++) {
 			GameObject obj = ToBeEnabled[i];
 			if (obj != null) {
