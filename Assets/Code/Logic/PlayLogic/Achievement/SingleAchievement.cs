@@ -34,7 +34,7 @@ public class SingleAchievement
 		tempKey = key + "." + EventsMaxKey;
 		miaEventsMax = prop.GetIntArray (tempKey);
 
-		Debug.Log (miID.ToString() + "-" + msKeyName + "-" + msDisplayName);
+		//Debug.Log (miID.ToString() + "-" + msKeyName + "-" + msDisplayName);
 	}
 
 	virtual public void RegisterEventHandlers(AchievementDetection adt)
@@ -50,7 +50,7 @@ public class SingleAchievement
 		for (int i = 0; i < args.Length; i++) {
 			argString += args[i] + ",";
 		}
-		Debug.Log ("Default Event Handler " + eEventType.ToString() + ":" + argString);
+		//Debug.Log ("Default Event Handler " + eEventType.ToString() + ":" + argString);
 		return true;
 	}
 
