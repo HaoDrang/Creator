@@ -1,6 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\SceneBackground\ColorSetter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs">
     <Files>
       <File FileName="Assets\Code\FrameWork\UI\FPSWatcher.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Test\DistortRing.cs" Line="1" Column="1" />
@@ -9,9 +9,18 @@
       <File FileName="Assets\Code\Logic\BallLogic\Balls\RegularBall.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\BallLogic\Balls\SpecialBall.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\PlayLogic\PreDataLoader.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\SceneBackground\ColorSetter.cs" Line="17" Column="11" />
-      <File FileName="Assets\Code\Logic\SceneBackground\Sky\SimpleSky.cs" Line="6" Column="2" />
-      <File FileName="Assets\Code\Test\ColorSetterTest.cs" Line="8" Column="1" />
+      <File FileName="Assets\Code\Logic\SceneBackground\ColorSetter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\SceneBackground\Sky\SimpleSky.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Test\ColorSetterTest.cs" Line="9" Column="1" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Achievement\SingleAchievement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundLayerBase.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundFar.cs" Line="4" Column="49" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundGround.cs" Line="6" Column="32" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundMain.cs" Line="4" Column="50" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundNear.cs" Line="4" Column="50" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundSky.cs" Line="4" Column="49" />
+      <File FileName="Assets\Code\Logic\SceneBackground\SceneBackground.cs" Line="5" Column="17" />
+      <File FileName="e:\GitHub\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="256" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

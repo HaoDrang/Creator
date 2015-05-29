@@ -15,6 +15,7 @@ public class LevelConfig
 	public int 		mPushProgress 		= 5;
 	public int[] mPowerUpDelayInitial 	= new int[2];
 	public int[] mPowerUpDelay			= new int[2];
+	public LevelEnum mDifficult = LevelEnum.Beginner;
 
 	public LevelConfig CreateNewConfig(Color[] cArray)
 	{
@@ -58,6 +59,7 @@ public class LevelConfig
 			lc.mPushProgress = prop.GetInt(key + PushProgressKey);
 			lc.mPowerUpDelayInitial = prop.GetIntArray(key + PowerUpDelayInitialKey);
 			lc.mPowerUpDelay = prop.GetIntArray(key + PowerUpDelay);
+			lc.mDifficult = (LevelEnum)i;
 			lcArray[i] = lc;
 		}
 		return lcArray;
