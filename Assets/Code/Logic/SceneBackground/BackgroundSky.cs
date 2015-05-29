@@ -5,7 +5,7 @@ public class BackgroundSky : BackgroundLayerBase
 {
 	private ColorSetter[] SkyBase;
 	private ColorSetter[] SkyDecorator;
-	private ColroSetter[] SkyVeins;
+	private ColorSetter[] SkyVeins;
 	[SerializeField]
 	private LevelEnum mLevelLimit_1;
 	[SerializeField]
