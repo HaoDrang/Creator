@@ -172,7 +172,12 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	{
 		switch (ball.GetBallType()) {
 		case BallType.Regular:
-			mBallListController.RemoveMatchingBalls (ball, CurrentLevelConfig);
+			int removeRet = mBallListController.RemoveMatchingBalls (ball, CurrentLevelConfig);
+			if (removeRet > 0) {
+				meUILogic.CreateConsumeText(removeRet, 
+				                            ball.CurrentColor, 
+				                            ball.transform.position);
+			}
 			break;
 		case BallType.PowerUp:
 		default:
@@ -182,7 +187,10 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 
 	void CheckLooseBalls ()
 	{
-		mBallListController.RemoveLooseBalls ();
+		int ret = mBallListController.RemoveLooseBalls ();
+		if (ret > 0) {
+			meUILogic.CreateDropText(ret, Vector3.zero);
+		}
 	}
 
 	public void BallOutOfBoard()

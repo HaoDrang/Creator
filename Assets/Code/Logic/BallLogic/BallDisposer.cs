@@ -330,7 +330,7 @@ public class BallDisposer : MonoBehaviour
 		row.SetBall (b, nicePos.index);
 	}
 
-	public void RemoveMatchingBalls (Ball ball, LevelConfig lvConf)
+	public int RemoveMatchingBalls (Ball ball, LevelConfig lvConf)
 	{
 
 		Ball[] balls = mGrid.GetMatchingBalls (ball);
@@ -340,10 +340,13 @@ public class BallDisposer : MonoBehaviour
 				b.DoFadeOutAndBoom(fadeDelay);
 				fadeDelay += mFadeDelayDelta;
 			}
+			return balls.Length;
 		}
+
+		return 0;
 	}
 
-	public void RemoveLooseBalls ()
+	public int RemoveLooseBalls ()
 	{
 		Ball[] balls = mGrid.GetLooseBalls ();
 		float delay = 0;
@@ -351,6 +354,10 @@ public class BallDisposer : MonoBehaviour
 			b.Fall(delay);
 			delay += mDropDelayDelta;
 		}
+		if (balls != null) {
+			return balls.Length;
+		}
+		return 0;
 	}
 
 	public void RemoveTargetBalls (Ball[] balls)

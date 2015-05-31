@@ -12,4 +12,6 @@ public class BallDefines
 	public const string BALL_SHOCKWAVE = "BallShockWave";
 	public const string MAIN_OBJECT_NAME = "Main";
 	public const string REGULAR_BALL_CONSUME_EFFECT_NAME = "RegularBallConsume";
+	public const string CONSUME_COUNT_PREFAB_NAME = "ConsumeCount";
+	public const string DROP_COUNT_PREFAB_NAME = "DropCount";
 }

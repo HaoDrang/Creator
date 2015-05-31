@@ -204,4 +204,13 @@ public class Ball : MonoBehaviour
 	virtual public void ConsumeFade ()
 	{
 	}
+
+	public Color CurrentColor {
+		get{
+			if (mImage != null) {
+				return mImage.color;
+			}
+			return Color.red;//return the pure red to alert people
+		}
+	}
 }
