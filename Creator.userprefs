@@ -1,17 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\UI\DropText.cs">
     <Files>
+      <File FileName="Assets\Code\Test\DistortRing.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Defines\BallState.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Defines\BallDefines.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\UI\ConsumeText.cs" Line="21" Column="3" />
+      <File FileName="Assets\Code\Logic\PlayLogic\UI\ConsumeText.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\PlayLogic\UI\DropText.cs" Line="19" Column="3" />
       <File FileName="Assets\Code\Logic\PlayLogic\UI\TextCreator.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\PlayLogic\UI\UILogic.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\BallLogic\BallDisposer.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\BallLogic\Balls\Ball.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\PlayLogic\UI\AnimationEventDispatcher.cs" Line="16" Column="23" />
+      <File FileName="Assets\Code\Logic\PlayLogic\UI\AnimationEventDispatcher.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
