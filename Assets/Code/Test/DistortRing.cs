@@ -10,7 +10,7 @@ public class DistortRing : MonoBehaviour {
 	private float mFrameRate = 24f;
 	void Start () {
 		mat = this.GetComponent<Renderer> ().material;
-
+		mat.SetFloat ("_BumpAmt", fromDistort);
 		StartCoroutine (DoScale());
 	}
 
@@ -18,6 +18,7 @@ public class DistortRing : MonoBehaviour {
 	{
 		int frameCount = Mathf.CeilToInt( lifeTime * mFrameRate );
 		float totalTime = (frameCount - 1f) * 1f / mFrameRate;
+
 
 		yield return null;
 
@@ -27,7 +28,7 @@ public class DistortRing : MonoBehaviour {
 			float mCurrentScale = Mathf.Lerp (0, targetScale, mTimeCounter / totalTime);
 			transform.localScale = new Vector3 (mCurrentScale, mCurrentScale, 1f);
 			float mCurrentDistort = Mathf.Lerp (fromDistort, 0, mTimeCounter / totalTime);
-			mat.SetFloat ("_BumpAmt", mCurrentDistort);
+//			mat.SetFloat ("_BumpAmt", mCurrentDistort);
 			yield return new WaitForSeconds(1f / mFrameRate);
 		}
 
