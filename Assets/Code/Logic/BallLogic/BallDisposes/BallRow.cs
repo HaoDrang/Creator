@@ -325,4 +325,17 @@ public class BallRow : MonoBehaviour
 
 		yield break;
 	}
+
+	public IEnumerator Wave()
+	{
+		for (int i = 0; i < mBalls.Length; i++) {
+			Ball b = mBalls[i];
+			if (b != null) {
+				b.Wave();
+				yield return null;
+			}
+		}
+		
+		yield break;
+	}
 }

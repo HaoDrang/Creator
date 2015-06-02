@@ -15,10 +15,11 @@ public class Ball : MonoBehaviour
 	[SerializeField]
 	protected float FadeTime = 0.6f;
 	private bool mFade = false;
-
+	protected WaveTarget mWave = null;
 	virtual protected void Awake()
 	{
 		mImage = GetComponent<Image> ();
+		mWave = GetComponent<WaveTarget>();
 	}
 	
 	virtual protected void Update()
@@ -212,6 +213,13 @@ public class Ball : MonoBehaviour
 				return mImage.color;
 			}
 			return Color.red;//return the pure red to alert people
+		}
+	}
+
+	virtual public void Wave()
+	{
+		if (mWave != null) {
+			mWave.Play();
 		}
 	}
 }

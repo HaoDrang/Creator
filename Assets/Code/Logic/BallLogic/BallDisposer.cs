@@ -135,6 +135,8 @@ public class BallDisposer : MonoBehaviour
 		if (mNeedToPush < 0) {
 			mbRevers = true;
 		}
+
+		DoWaveAll();
 	}
 
 	public IEnumerator ResetGrid (LevelConfig config)
@@ -490,6 +492,10 @@ public class BallDisposer : MonoBehaviour
 		return Random.Range(0, mLevelConfig.mColors.Length);
 	}
 
+	public void DoWaveAll()
+	{
+		StartCoroutine(mGrid.WaveAll());
+	}
 }
 
 public enum DisposerState

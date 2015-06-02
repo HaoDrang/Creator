@@ -222,4 +222,16 @@ public class BallGrid
 		}
 		mRows.Clear ();
 	}
+
+	public IEnumerator WaveAll()
+	{
+		for (int i = mRows.Count - 1; i >= 0; i--) {
+			BallRow row = mRows[i];
+			if (row != null) {
+				row.StartCoroutine(row.Wave());
+				yield return new WaitForSeconds(0.08f);
+			}
+		}
+		yield break;
+	}
 }
