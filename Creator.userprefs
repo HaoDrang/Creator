@@ -1,22 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\BallLogic\BallDisposes\BallGrid.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Test\ColorChangeTest.cs">
     <Files>
-      <File FileName="Assets\Code\Test\ColorChangeTest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Test\WaveTarget.cs" Line="14" Column="18" />
-      <File FileName="Assets\Code\FrameWork\Tool\TimeCounter.cs" Line="9" Column="52" />
-      <File FileName="Assets\Code\FrameWork\Defines\DelegateDefines.cs" Line="6" Column="38" />
-      <File FileName="Assets\Code\Logic\BallLogic\Balls\Ball.cs" Line="222" Column="17" />
-      <File FileName="Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" Line="329" Column="10" />
-      <File FileName="Assets\Code\Logic\BallLogic\BallDisposes\BallGrid.cs" Line="228" Column="31" />
-      <File FileName="Assets\Code\Logic\BallLogic\BallDisposer.cs" Line="497" Column="1" />
+      <File FileName="Assets\Code\Test\ColorChangeTest.cs" Line="14" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="E:\Git\Creator\Assets\Code\Logic\BallLogic\BallDisposer.cs" line="497" />
-      <Breakpoint file="E:\Git\Creator\Assets\Code\Logic\BallLogic\BallDisposes\BallRow.cs" line="331" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
