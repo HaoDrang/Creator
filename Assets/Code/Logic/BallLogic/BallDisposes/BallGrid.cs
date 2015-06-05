@@ -229,7 +229,7 @@ public class BallGrid
 			BallRow row = mRows[i];
 			if (row != null) {
 				row.StartCoroutine(row.Wave());
-				yield return new WaitForSeconds(0.08f);
+				yield return null;
 			}
 		}
 		yield break;
