@@ -141,8 +141,8 @@ public class BallShooter : MonoBehaviour {
 
 	public void PrepareSmall(LevelConfig lvConf)
 	{
-		mSmallBallSlot.PrepareRandBall (lvConf.mColors.Length);
-		//mSmallBallSlot.PrepareRandPowerUpBall ();
+		//mSmallBallSlot.PrepareRandBall (lvConf.mColors.Length);
+		mSmallBallSlot.PrepareRandPowerUpBall ();
 	}
 
 

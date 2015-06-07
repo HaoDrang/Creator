@@ -11,9 +11,10 @@ public class BallRow : MonoBehaviour
 	private int 	miOffset = 0;
 	private const int ReTryCount = 50;
 	private const string PrefabName = "BallRow";
-	private int miPowerUpCount = 0;
 	private bool mbFirstPowerup = true;
 
+	static private int miPowerUpCount = 0;
+	
 	public void Init (bool boffset)
 	{
 		mbIsOffset = boffset;

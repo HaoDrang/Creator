@@ -19,6 +19,7 @@ levelconfig.beginner.matchingballcount		= 3
 levelconfig.beginner.pushprogress			= 1
 levelconfig.beginner.powerupdelayinitial	= 24,32
 levelconfig.beginner.powerupdelay			= 80,120
+levelconfig.beginner.powertypes				= 0
 
 levelconfig.easy.levelname 				= "easy"
 levelconfig.easy.width 					= 9,9
@@ -29,6 +30,7 @@ levelconfig.easy.matchingballcount		= 3
 levelconfig.easy.pushprogress			= 2
 levelconfig.easy.powerupdelayinitial	= 27,36
 levelconfig.easy.powerupdelay			= 72,108
+levelconfig.easy.powertypes				= 0
 
 levelconfig.normal.levelname 				= "normal"
 levelconfig.normal.width 					= 10,10
@@ -39,6 +41,7 @@ levelconfig.normal.matchingballcount		= 3
 levelconfig.normal.pushprogress				= 3
 levelconfig.normal.powerupdelayinitial		= 30,40
 levelconfig.normal.powerupdelay				= 70,90
+levelconfig.normal.powertypes				= 0,3
 
 levelconfig.hard.levelname 				= "hard"
 levelconfig.hard.width 					= 11,11
@@ -49,6 +52,7 @@ levelconfig.hard.matchingballcount		= 3
 levelconfig.hard.pushprogress			= 4
 levelconfig.hard.powerupdelayinitial	= 22,33
 levelconfig.hard.powerupdelay			= 55,77
+levelconfig.hard.powertypes				= 0,1,3
 
 levelconfig.crazy.levelname 			= "crazy"
 levelconfig.crazy.width 				= 11,11
@@ -59,6 +63,7 @@ levelconfig.crazy.matchingballcount		= 3
 levelconfig.crazy.pushprogress			= 5
 levelconfig.crazy.powerupdelayinitial	= 22,33
 levelconfig.crazy.powerupdelay			= 55,66
+levelconfig.crazy.powertypes			= 0,1,3,4
 
 levelconfig.overlord.levelname 				= "overlord"
 levelconfig.overlord.width 					= 11,11
@@ -69,6 +74,7 @@ levelconfig.overlord.matchingballcount		= 3
 levelconfig.overlord.pushprogress			= 6
 levelconfig.overlord.powerupdelayinitial	= 22,33
 levelconfig.overlord.powerupdelay			= 44,55
+levelconfig.overlord.powertypes				= 0,1,2,3,4
 
 levelconfig.demigod.levelname 				= "demigod"
 levelconfig.demigod.width 					= 11,11
@@ -79,6 +85,7 @@ levelconfig.demigod.matchingballcount		= 3
 levelconfig.demigod.pushprogress			= 7
 levelconfig.demigod.powerupdelayinitial		= 22,33
 levelconfig.demigod.powerupdelay			= 33,44
+levelconfig.demigod.powertypes				= 0,1,2,3,4,5
 
 // colorboard.groupIndex.index
 colorboard.0.colorcount = 6

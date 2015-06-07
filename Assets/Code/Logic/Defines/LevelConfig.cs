@@ -42,6 +42,7 @@ public class LevelConfig
 	const string PushProgressKey 		= "pushprogress";
 	const string PowerUpDelayInitialKey = "powerupdelayinitial";
 	const string PowerUpDelay 			= "powerupdelay";
+	const string SpecialBallKey			= "powertypes";
 
 	public static LevelConfig[] LoadLevelConfigs(Property prop)
 	{
@@ -60,6 +61,10 @@ public class LevelConfig
 			lc.mPowerUpDelayInitial = prop.GetIntArray(key + PowerUpDelayInitialKey);
 			lc.mPowerUpDelay = prop.GetIntArray(key + PowerUpDelay);
 			lc.mDifficult = (LevelEnum)i;
+			lc.eTypes = Array.ConvertAll<int,SpecialBallType>(
+				prop.GetIntArray(key + SpecialBallKey),
+				iInput => (SpecialBallType)iInput);
+
 			lcArray[i] = lc;
 		}
 		return lcArray;

@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="D:\haozhang-PSHAENGDESK034-genius\pogo\pogonext\client\main\Assets\Reporter\ReporterMessageReceiver.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\UI\DifficultiesDialog.cs">
     <Files>
-      <File FileName="D:\haozhang-PSHAENGDESK034-genius\pogo\pogonext\client\main\Assets\Reporter\ReporterMessageReceiver.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\PlayLogic\UI\DifficultiesDialog.cs" Line="11" Column="36" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="250" Column="34" />
+      <File FileName="Assets\Code\Logic\Defines\LevelEnum.cs" Line="10" Column="5" />
+      <File FileName="Assets\Resources\Properties\Property.txt" Line="44" Column="38" />
+      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundSky.cs" Line="8" Column="1" />
+      <File FileName="Assets\Code\Logic\Defines\LevelConfig.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

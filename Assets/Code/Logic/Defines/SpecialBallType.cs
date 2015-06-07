@@ -8,5 +8,6 @@ public enum SpecialBallType
 	CHAINSAW,
 	PAINT,
 	SHOWER,
+	SUPERBALL,
 	SPECIAL_TYPE_COUNT,
 }

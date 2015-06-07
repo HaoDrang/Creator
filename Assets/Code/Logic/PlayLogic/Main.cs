@@ -52,11 +52,6 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 		// abouve all
 		mLevelConfig = LevelConfig.LoadLevelConfigs (Property.Instante);
 
-		//TODO  THE shooter should not do the initialize here
-		mCurrentLevelConfig = mLevelConfig [(int)LevelEnum.Easy].CreateNewConfig (ColorBoard.GetColorArray(1));
-		if (mShooter != null) {
-			mShooter.Init(CurrentLevelConfig, mMainCamera, ColliderCallBack, AchievementDetector);
-		}
 	}
 
 	void Update()
@@ -212,6 +207,9 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	public void GameBegin()
 	{
 		mState = GameState.INTRODUCTIONDONE;
+		if (mShooter != null) {
+			mShooter.Init(CurrentLevelConfig, mMainCamera, ColliderCallBack, AchievementDetector);
+		}
 	}
 
 	public void ReplayRound()
@@ -245,6 +243,11 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 		GameObject shooter = GameObject.Find (BallDefines.SHOOTER_OBJECT_NAME);
 		shooter.GetComponent<BallShooter> ().PrepareSmall (eBallType, (int)spBallType);
 		yield break;
+	}
+
+	public void SetDifficult (LevelEnum lv)
+	{
+		mCurrentLevelConfig = mLevelConfig [(int)lv].CreateNewConfig (ColorBoard.GetColorArray(1));
 	}
 
 	//----------------------------------------------------

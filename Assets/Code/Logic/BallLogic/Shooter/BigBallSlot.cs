@@ -24,6 +24,7 @@ public class BigBallSlot : MonoBehaviour
 	private int mBallColor = 0;
 	private BallType mBallType = BallType.Regular;
 	private Color[] mCurrentColors = null;
+	private Sprite NormalSprite = null;
 	public void Init (Color[] colors)
 	{
 		mCurrentColors = colors;
@@ -31,12 +32,14 @@ public class BigBallSlot : MonoBehaviour
 
 	void Awake()
 	{
+		NormalSprite = ballImg.sprite;
 		SlideTo = SlideTarget.localPosition.y;
 	}
 
 	void PrepareBall(int c)
 	{
 		BigSlotAnimator.enabled = false;
+		ballImg.sprite = NormalSprite;
 		mBallType = BallType.Regular;
 		mBallColor = c;
 		SetColor (c);
@@ -51,6 +54,7 @@ public class BigBallSlot : MonoBehaviour
 		BigSlotAnimator.enabled = true;
 		SlideOutBall ();
 		BigSlotAnimator.Play (ImgPrefix_Big + (int)eType);
+		ballImg.color = Color.white;
 		if (!gameObject.activeSelf) {
 			gameObject.SetActive(true);
 		}

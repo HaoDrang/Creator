@@ -10,10 +10,15 @@ public class SmallBallSlot : MonoBehaviour
 	private int mBallColor = 0;
 	private BallType mBallType = BallType.Regular;
 	private Color[] mCurrentColors = null;
-
+	private Sprite NormalSprite = null;
 	public void Init(Color[] clList)
 	{
 		mCurrentColors = clList;
+	}
+
+	void Awake()
+	{
+		NormalSprite = ballImg.sprite;
 	}
 
 	public void PrepareRandBall (int colorCount)
@@ -24,7 +29,7 @@ public class SmallBallSlot : MonoBehaviour
 	public void PrepareRandPowerUpBall ()
 	{
 		mBallType = BallType.PowerUp;
-		PrepareBall ((SpecialBallType)(Random.Range(0,(int)SpecialBallType.SPECIAL_TYPE_COUNT)));
+		PrepareBall ((SpecialBallType)(Random.Range(0,(int)SpecialBallType.SUPERBALL)));
 	}
 
 	void PrepareBall (int c)
@@ -32,6 +37,7 @@ public class SmallBallSlot : MonoBehaviour
 		mBallType = BallType.Regular;
 		Animator anm = GetComponent<Animator> ();
 		anm.enabled = false;
+		ballImg.sprite = NormalSprite;
 		mBallColor = c;
 		SetColor (c);
 		if (!gameObject.activeSelf) {
@@ -44,6 +50,7 @@ public class SmallBallSlot : MonoBehaviour
 		mBallType = BallType.PowerUp;
 		Animator anm = GetComponent<Animator> ();
 		anm.enabled = true;
+		ballImg.color = Color.white;
 		mBallColor = (int)t;
 		anm.Play (ImgPrefix_Big + (int)t);
 		if (!gameObject.activeSelf) {

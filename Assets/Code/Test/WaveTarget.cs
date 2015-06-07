@@ -29,8 +29,7 @@ public class WaveTarget : MonoBehaviour {
 	{
 		mCounter 	= new TimeCounter(during, LerpScale, WaveDone);
 		mTrans 		= transform;
-		mvOldLocalPos 	= mTrans.localPosition;
-		mvOldScale 		= mTrans.localScale;
+
 	}
 	
 	// Update is called once per frame
@@ -63,6 +62,9 @@ public class WaveTarget : MonoBehaviour {
 
 	public void Play()
 	{
+		mvOldLocalPos 	= mTrans.localPosition;
+		mvOldScale 		= mTrans.localScale;
+
 		mCounter.Play();
 	}
 
