@@ -29,7 +29,7 @@ public class SmallBallSlot : MonoBehaviour
 	public void PrepareRandPowerUpBall ()
 	{
 		mBallType = BallType.PowerUp;
-		PrepareBall ((SpecialBallType)(Random.Range(0,(int)SpecialBallType.SUPERBALL)));
+		PrepareBall ((SpecialBallType)(Random.Range(0,(int)SpecialBallType.SPECIAL_TYPE_COUNT)));
 	}
 
 	void PrepareBall (int c)

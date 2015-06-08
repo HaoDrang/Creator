@@ -1,13 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\PlayLogic\UI\DifficultiesDialog.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\BallLogic\Shooter\BigBallSlot.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\PlayLogic\UI\DifficultiesDialog.cs" Line="11" Column="36" />
-      <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="250" Column="34" />
-      <File FileName="Assets\Code\Logic\Defines\LevelEnum.cs" Line="10" Column="5" />
-      <File FileName="Assets\Resources\Properties\Property.txt" Line="44" Column="38" />
-      <File FileName="Assets\Code\Logic\SceneBackground\BackgroundSky.cs" Line="8" Column="1" />
-      <File FileName="Assets\Code\Logic\Defines\LevelConfig.cs" Line="5" Column="1" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\SpecialBall.cs" Line="84" Column="1" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\PowerUpBalls\PW_Bomb.cs" Line="8" Column="22" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\PowerUpBalls\PW_Super.cs" Line="11" Column="33" />
+      <File FileName="Assets\Code\Logic\BallLogic\Shooter\BallShooter.cs" Line="46" Column="1" />
+      <File FileName="Assets\Code\Logic\BallLogic\Shooter\SmallBallSlot.cs" Line="32" Column="88" />
+      <File FileName="Assets\Code\Logic\PlayLogic\Main.cs" Line="248" Column="21" />
+      <File FileName="Assets\Code\Logic\PlayLogic\UI\DifficultiesDialog.cs" Line="8" Column="14" />
+      <File FileName="Assets\Code\Logic\BallLogic\Shooter\BigBallSlot.cs" Line="54" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

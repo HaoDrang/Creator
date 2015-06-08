@@ -51,13 +51,18 @@ public class BigBallSlot : MonoBehaviour
 
 	void PrepareBall(SpecialBallType eType)
 	{
-		BigSlotAnimator.enabled = true;
-		SlideOutBall ();
-		BigSlotAnimator.Play (ImgPrefix_Big + (int)eType);
-		ballImg.color = Color.white;
-		if (!gameObject.activeSelf) {
-			gameObject.SetActive(true);
+		try {
+			BigSlotAnimator.enabled = true;
+			SlideOutBall ();
+			BigSlotAnimator.Play (ImgPrefix_Big + (int)eType);
+			ballImg.color = Color.white;
+			if (!gameObject.activeSelf) {
+				gameObject.SetActive(true);
+			}
+		} catch (System.Exception ex) {
+			Debug.Log("Type:" + eType);
 		}
+
 	}
 
 	public void PrepareBall(BallType eType, int iType)
