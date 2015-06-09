@@ -11,7 +11,8 @@ public class TestShooter : MonoBehaviour {
 	[SerializeField]
 	Transform BallLayer = null;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 	
 	}
 	

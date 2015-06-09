@@ -92,14 +92,5 @@ namespace Game.Logic
 		}
 	}
 
-	public enum BLR//Ball Appreance Layer
-	{
-		Front,
-		Highlight,
-		Shadow,
-		Vein,
-		SpecialAnimation,
-		BaseColor,
-		LayerNum,
-	}
+
 }

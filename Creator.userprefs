@@ -1,14 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Clip\ClipFactory.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\BallComponents\BallController.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="25" Column="5" />
-      <File FileName="Assets\Code\Logic\Ball\Ball.cs" Line="5" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\BallAnimator.cs" Line="13" Column="28" />
-      <File FileName="Assets\Code\Logic\Ball\IRowHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ActClip.cs" Line="4" Column="2" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="46" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipEnum.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\Ball.cs" Line="11" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallAnimator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallController.cs" Line="40" Column="31" />
+      <File FileName="Assets\Editor\FrameWork\BallControllerInspector.cs" Line="81" Column="4" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallEventListener.cs" Line="18" Column="4" />
+      <File FileName="Assets\Code\Logic\Events\BallEvents.cs" Line="6" Column="71" />
+      <File FileName="Assets\Code\Logic\BallLogic\Balls\Ball.cs" Line="37" Column="1" />
+      <File FileName="Assets\Code\Logic\Defines\LevelConfig.cs" Line="18" Column="51" />
+      <File FileName="Assets\Code\Logic\Ball\Appearance\BallDecorationsEnum.cs" Line="30" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="95" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

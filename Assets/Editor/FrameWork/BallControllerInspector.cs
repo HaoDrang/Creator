@@ -3,8 +3,8 @@ using UnityEditor;
 
 namespace Game.BallEditor
 {
-	[CustomEditor(typeof(Game.Logic.Ball))]
-	public class BallInspector : UnityEditor.Editor
+	[CustomEditor(typeof(Game.Logic.BallController))]
+	public class BallControllerInspector : UnityEditor.Editor
 	{
 		public override void OnInspectorGUI ()
 		{
@@ -12,7 +12,7 @@ namespace Game.BallEditor
 			GUILayout.Space (5f);
 			GUILayout.BeginVertical ();
 			if (GUILayout.Button("Fill Layers")) {
-				FillLayers(target as Game.Logic.Ball);
+				FillLayers(target as Game.Logic.BallController);
 			}
 			GUILayout.Space (10f);
 
@@ -24,7 +24,7 @@ namespace Game.BallEditor
 				EditorUtility.SetDirty (target);
 		} 
 
-		void FillLayers (Game.Logic.Ball tar)
+		void FillLayers (Game.Logic.BallController tar)
 		{
 			string layerName = "";
 			GameObject targetLayer = null;
@@ -47,12 +47,12 @@ namespace Game.BallEditor
 			{
 				layerName = ((Game.Logic.BLR)i).ToString();
 				if (GUILayout.Button("Add " + layerName +" Layer")) {
-					AddSingleLayer(target as Game.Logic.Ball, layerName);
+					AddSingleLayer(target as Game.Logic.BallController, layerName);
 				}
 			}
 		}
 
-		void AddSingleLayer (Game.Logic.Ball target, string layerName)
+		void AddSingleLayer (Game.Logic.BallController target, string layerName)
 		{
 			GameObject obj = FrameWork.Utils.GameTool.SearchChild(target.transform, layerName);
 			if (obj != null) {
@@ -71,7 +71,7 @@ namespace Game.BallEditor
 
 		void ResortLayers ()
 		{
-			Game.Logic.Ball tar = target as Game.Logic.Ball;
+			Game.Logic.BallController tar = target as Game.Logic.BallController;
 			string layerName = "";
 			GameObject targetLayer = null;
 
