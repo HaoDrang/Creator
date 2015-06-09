@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Game.Logic.Clip
 {
@@ -34,6 +35,17 @@ namespace Game.Logic.Clip
 				return _container[type];
 			}
 			return default(ActClip);
+		}
+
+		public T Generate<T>() where T: ActClip
+		{
+			System.Type tp = typeof(T);
+			if (_container.ContainsKey(tp)){
+//				return (new Assembler). (T)_container[tp];
+
+
+			}
+			return default(T);
 		}
 
 		private void InternalRegister ()

@@ -9,6 +9,7 @@ namespace Game.Logic.Clip
 		virtual public void Play(){}
 		virtual public void Pause(bool bPause){}
 		virtual public void Speed(float speed){}
+		virtual public void Tick(float dt){}
 		virtual public void End(){
 			if (maCallBack != null) {
 				maCallBack();

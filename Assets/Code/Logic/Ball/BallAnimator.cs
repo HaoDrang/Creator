@@ -4,25 +4,43 @@ namespace Game.Logic
 {
 	public class BallAnimator : MonoBehaviour
 	{
-		private static ClipFactory _ClipFactory = null;
+		private static ClipFactory _factory = null;
 		protected static ClipFactory ClipGenerator
 		{
 			get
 			{
-				if (_ClipFactory == null) {
-					_ClipFactory = new ClipFactory();
+				if (_factory == null) {
+					_factory = new ClipFactory();
 				}
-				return _ClipFactory;
+				return _factory;
 			}
 		}
 
+		private ActClip currentClip = null;
+
 		public void Play(ClipEnum clipEnum)
 		{
+			if (currentClip != null) {
+				currentClip.Reset();
+				currentClip = null;
+			}
 			switch (clipEnum) {
 			case ClipEnum.BallShake:
+//				ClipGenerator.Generate();
 				break;
 			default:
 				break;
+			}
+
+			if (currentClip != null) {
+				currentClip.Play();
+			}
+		}
+
+		void Update()
+		{
+			if (currentClip != null) {
+				currentClip.Tick(Time.deltaTime);
 			}
 		}
 	}

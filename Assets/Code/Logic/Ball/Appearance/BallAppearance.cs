@@ -45,10 +45,29 @@ namespace Game.Logic
 		public BallAppearance Decorate (BLR eLayer, Sprite sp)
 		{
 			if (Imgs [(int)eLayer] != null) {
-				Imgs [(int)eLayer].sprite = sp;
+				if (sp != null) {
+					Imgs [(int)eLayer].enabled = true;
+					Imgs [(int)eLayer].sprite = sp;
+				}
+				else
+				{
+					Imgs [(int)eLayer].enabled = false;
+				}
 			}
 
 			return this;
+		}
+
+		public void Done()
+		{
+			for (int i = 0; i < Imgs.Length; i++) {
+				Image img = Imgs[i];
+				if (img != null) {
+					if (img.sprite == null) {
+						img.enabled = false;
+					}
+				}
+			}
 		}
 
 		public BallAppearance DecorateWithAnimation(BLR eLayer, string animationName)
@@ -61,6 +80,14 @@ namespace Game.Logic
 				}
 			}
 
+			return this;
+		}
+
+		public BallAppearance SetColor(BLR eLayer, Color clr)
+		{
+			if (Imgs [(int)eLayer] != null) {
+				Imgs [(int)eLayer].color = clr;
+			}
 			return this;
 		}
 	}
