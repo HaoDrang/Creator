@@ -1,14 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\BallAnimator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs">
     <Files>
       <File FileName="Assets\Code\Logic\Ball\Clip\ClipEnum.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="38" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\BallAnimator.cs" Line="24" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Ball.cs" Line="20" Column="23" />
+      <File FileName="Assets\Code\Logic\Ball\Ball.cs" Line="6" Column="48" />
       <File FileName="Assets\Code\Logic\Ball\Clip\ActClip.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\IRowHandler.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\BallAnimatorController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="17" Column="4" />
+      <File FileName="Assets\ImagePartical.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Test\ColorChangeTest.cs" Line="55" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Row.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
