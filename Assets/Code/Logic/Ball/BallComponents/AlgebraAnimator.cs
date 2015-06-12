@@ -1,16 +1,16 @@
 using UnityEngine;
 using Game.Logic.Clip;
+
 namespace Game.Logic
 {
-	public class BallAnimator : MonoBehaviour
+	public class AlgebraAnimator : MonoBehaviour
 	{
 		private static ClipFactory _factory = null;
-		protected static ClipFactory ClipGenerator
-		{
-			get
-			{
+
+		protected static ClipFactory ClipGenerator {
+			get {
 				if (_factory == null) {
-					_factory = new ClipFactory();
+					_factory = new ClipFactory ();
 				}
 				return _factory;
 			}
@@ -18,10 +18,10 @@ namespace Game.Logic
 
 		private ActClip currentClip = null;
 
-		public void Play(ClipEnum clipEnum)
+		public void Play (ClipEnum clipEnum)
 		{
 			if (currentClip != null) {
-				currentClip.Reset();
+				currentClip.Reset ();
 				currentClip = null;
 			}
 			switch (clipEnum) {
@@ -33,14 +33,14 @@ namespace Game.Logic
 			}
 
 			if (currentClip != null) {
-				currentClip.Play();
+				currentClip.Play ();
 			}
 		}
 
-		void Update()
+		void Update ()
 		{
 			if (currentClip != null) {
-				currentClip.Tick(Time.deltaTime);
+				currentClip.Tick (Time.deltaTime);
 			}
 		}
 	}

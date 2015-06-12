@@ -6,11 +6,13 @@ namespace Game.Logic
 	public class BallEventListener : MonoBehaviour
 	{
 		[SerializeField]
-		protected BallCollideEvent
-			_CollisionEvt = new BallCollideEvent ();
+		protected BallCollisionEvent
+			_CollisionEvt = new BallCollisionEvent ();
 		[SerializeField]
 		protected BallShootEvent
 			_ShootEvt = new BallShootEvent ();
+//		[SerializeField]
+
 
 		void OnCollisionEnter2D (Collision2D target)
 		{

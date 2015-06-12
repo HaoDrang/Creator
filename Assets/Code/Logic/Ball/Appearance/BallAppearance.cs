@@ -17,11 +17,11 @@ namespace Game.Logic
 			}
 		}
 
-		public BallAppearance(Image[] images)
+		public BallAppearance (Image[] images)
 		{
 			if (images != null) {
 				int copyLength = images.Length < (int)BLR.LayerNum ? images.Length : (int)BLR.LayerNum;
-				Array.Copy(images, Imgs, copyLength);
+				Array.Copy (images, Imgs, copyLength);
 			}
 		}
 
@@ -48,9 +48,7 @@ namespace Game.Logic
 				if (sp != null) {
 					Imgs [(int)eLayer].enabled = true;
 					Imgs [(int)eLayer].sprite = sp;
-				}
-				else
-				{
+				} else {
 					Imgs [(int)eLayer].enabled = false;
 				}
 			}
@@ -58,10 +56,10 @@ namespace Game.Logic
 			return this;
 		}
 
-		public void Done()
+		public void Done ()
 		{
 			for (int i = 0; i < Imgs.Length; i++) {
-				Image img = Imgs[i];
+				Image img = Imgs [i];
 				if (img != null) {
 					if (img.sprite == null) {
 						img.enabled = false;
@@ -70,12 +68,11 @@ namespace Game.Logic
 			}
 		}
 
-		public BallAppearance DecorateWithAnimation(BLR eLayer, string animationName)
+		public BallAppearance DecorateWithAnimation (BLR eLayer, string animationName)
 		{
 			if (Imgs [(int)eLayer] != null) {
 				Animator anm = Imgs [(int)eLayer].GetComponent<Animator> ();
-				if (anm != null) 
-				{
+				if (anm != null) {
 					anm.Play (animationName);
 				}
 			}
@@ -83,7 +80,7 @@ namespace Game.Logic
 			return this;
 		}
 
-		public BallAppearance SetColor(BLR eLayer, Color clr)
+		public BallAppearance SetColor (BLR eLayer, Color clr)
 		{
 			if (Imgs [(int)eLayer] != null) {
 				Imgs [(int)eLayer].color = clr;

@@ -4,27 +4,34 @@ using UnityEngine.UI;
 
 namespace Game.Logic
 {
+    [RequireComponent(typeof(BallEventListener))]
+    [RequireComponent(typeof(BallController))]
 	public class Ball : MonoBehaviour, IRowHandler
 	{
 		[SerializeField]
 		protected BallEventListener _listener = null;
+		[SerializeField]
+		protected BallController _controller = null;
 
 		protected BallState mState = default(BallState);
 
+		protected Row mRow = null;
+
 		virtual public void Awake()
 		{
+			_listener = GetComponent<BallEventListener>();
+			_controller = GetComponent<BallController> ();
         }
         
 		virtual public void DetachRow()
 		{
-			throw new NotImplementedException();
+			mRow = null;
 		}
 
 		virtual public void SetRow(Row r)
 		{
-			throw new NotImplementedException();
+			mRow = r;
 		}
-
  	}
 
 	public enum BallState
@@ -33,6 +40,7 @@ namespace Game.Logic
 		READY,
 		STATIC,
 		FLY,
+		DISPOSED,
 	}
 }
 

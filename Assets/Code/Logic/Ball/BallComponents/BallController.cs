@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 namespace Game.Logic
 {
-	[RequireComponent(typeof(BallAnimator))]
+    [RequireComponent(typeof(AlgebraAnimator))]
 	public class BallController : MonoBehaviour
 	{
 		[SerializeField]
-		protected BallAnimator _animator = null;
+		protected AlgebraAnimator _animator = null;
 		[SerializeField]
 		protected Image[] _ballimgs = new Image[(int)BLR.LayerNum];
 		[SerializeField]
@@ -19,7 +19,7 @@ namespace Game.Logic
 		{
 			// default appearance
 			_appearance = new BallAppearance (_ballimgs);
-			_animator 	= GetComponent<BallAnimator>();
+			_animator 	= GetComponent<AlgebraAnimator>();
 		}
 		
 		virtual public void SetLayerImgs (UnityEngine.UI.Image[] images)
@@ -31,9 +31,11 @@ namespace Game.Logic
 		{
 			BallAppearanceLevel bal = (BallAppearanceLevel)conf.mDifficult;
 			string nm = "";
+			Sprite sp = null;
 			for (int i = 0; i < (int)BLR.LayerNum; i++) {
 				nm = GetDecorationName((BLR)i, bal);
-
+				sp = SpritesMgr.Instance.GetImage(nm);
+				_appearance.Decorate((BLR)i, sp);
 			}
 		}
 
