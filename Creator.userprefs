@@ -1,22 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\FrameWork\TFactory.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\BallComponents\AlgebraAnimator.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\Ball.cs" Line="27" Column="4" />
-      <File FileName="Assets\Code\Logic\Ball\Appearance\BallDecorationsEnum.cs" Line="21" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="20" Column="41" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\AlgebraAnimator.cs" Line="13" Column="29" />
+      <File FileName="Assets\Code\Logic\Ball\Clip\ActClip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Appearance\BallDecorationsEnum.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\AlgebraAnimator.cs" Line="24" Column="28" />
       <File FileName="Assets\Code\Logic\Ball\BallComponents\BallController.cs" Line="38" Column="21" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallEventListener.cs" Line="14" Column="9" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ActClip.cs" Line="49" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallEventListener.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\Clip\ClipEnum.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="14" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="8" Column="3" />
       <File FileName="Assets\Code\Logic\Ball\IRowHandler.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\Row.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="23" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ActClips\BallShakeClip.cs" Line="6" Column="28" />
+      <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clip\ActClips\BallShakeClip.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="7" Column="2" />
-      <File FileName="Assets\Code\FrameWork\Tool\GameTool.cs" Line="3" Column="20" />
+      <File FileName="Assets\Code\FrameWork\Tool\GameTool.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

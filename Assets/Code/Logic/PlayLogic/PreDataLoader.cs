@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PreDataLoader : MonoBehaviour 
@@ -23,8 +23,8 @@ public class PreDataLoader : MonoBehaviour
 	IEnumerator Start()
 	{
 		// above all
-		Property.Instante.LoadDictionary(PropertyPath);
-		Property props = Property.Instante;
+		Property.Ins.LoadDictionary(PropertyPath);
+		Property props = Property.Ins;
 		yield return null;
 		// init managers
 		ColorBoard.Init (props);

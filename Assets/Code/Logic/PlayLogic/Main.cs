@@ -50,7 +50,7 @@ public class Main : MonoBehaviour, IGameOverEventHandler
 	void Start()
 	{
 		// abouve all
-		mLevelConfig = LevelConfig.LoadLevelConfigs (Property.Instante);
+		mLevelConfig = LevelConfig.LoadLevelConfigs (Property.Ins);
 
 	}
 

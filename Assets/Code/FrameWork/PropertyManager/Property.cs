@@ -8,7 +8,7 @@ public class Property
 
 	static Property mInstance = null;
 
-	static public Property Instante{ 
+	static public Property Ins{ 
 		get
 		{ 
 			if (mInstance == null) {

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -8,7 +8,7 @@ public class PrefabMgr : MonoBehaviour
 	private GameObject[] preData;
 	private Dictionary<string, GameObject> mDic = new Dictionary<string, GameObject>();
 	
-	public static PrefabMgr Instance{ get{return mInstance;} }
+	public static PrefabMgr Ins{ get{return mInstance;} }
 	private static PrefabMgr mInstance = null;
 	void Awake()
 	{

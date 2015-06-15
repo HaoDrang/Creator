@@ -27,14 +27,14 @@ namespace FrameWork
 			mContainer.Remove (type);
 		}
 
-		public TGet Generate<TGet> (params object[] p) where TGet : T
+		public TGet Generate<TGet> () where TGet : T
 		{
 			Func<T> creator = null;
 			mContainer.TryGetValue (typeof(TGet), out creator);
 			if (creator == null) {
 				return (TGet)creator ();
 			} else {
-				return (TGet)System.Activator.CreateInstance (typeof(TGet), p);
+				return (TGet)System.Activator.CreateInstance (typeof(TGet));
 			}
 		}
 	}

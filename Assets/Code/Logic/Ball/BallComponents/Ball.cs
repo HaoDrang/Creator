@@ -32,6 +32,11 @@ namespace Game.Logic
 		{
 			mRow = r;
 		}
+
+		virtual public void SetState(BallState state)
+		{
+			mState = state;
+		}
  	}
 
 	public enum BallState

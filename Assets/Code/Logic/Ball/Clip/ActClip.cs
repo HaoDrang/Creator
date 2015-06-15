@@ -18,6 +18,11 @@ namespace Game.Logic.Clip
 			maCallBack = cb;
 		}
 
+		virtual public void Play(UnityEngine.Transform trans, Action cb)
+		{
+			mbPlay = true;
+		}
+
 		virtual public void Play ()
 		{
 			mbPlay = true;

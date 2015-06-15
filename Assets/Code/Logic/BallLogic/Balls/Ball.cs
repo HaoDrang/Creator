@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -45,7 +45,7 @@ public class Ball : MonoBehaviour
 		}
 
 //		Debug.Log ("Collision:" + target.contacts[0].point.ToString());
-		GameObject obj = PrefabMgr.Instance.CreateCopy (BallDefines.BALL_COLLISIONWAVE);
+		GameObject obj = PrefabMgr.Ins.CreateCopy (BallDefines.BALL_COLLISIONWAVE);
 		obj.transform.position = new Vector3 (target.contacts[0].point.x, target.contacts[0].point.y, 
 		                                      target.gameObject.transform.position.z - 2f);
 		Destroy (obj, 1f);
@@ -150,7 +150,7 @@ public class Ball : MonoBehaviour
 	void FadeAndBoomImmediatly()
 	{
 
-		GameObject boomObj = PrefabMgr.Instance.CreateCopy(BallDefines.BALL_BOOM_EFFECT_NAME);
+		GameObject boomObj = PrefabMgr.Ins.CreateCopy(BallDefines.BALL_BOOM_EFFECT_NAME);
 
 		Vector3 pos = transform.position;
 		pos.z -= 2f;

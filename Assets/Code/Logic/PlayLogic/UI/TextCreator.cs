@@ -6,7 +6,7 @@ public class TextCreator : MonoBehaviour
 {
 	public void CreateConsumeText(int iCount, Color cColor, Vector3 targetPos)
 	{
-		GameObject ctobj = PrefabMgr.Instance.CreateCopy(BallDefines.CONSUME_COUNT_PREFAB_NAME);
+		GameObject ctobj = PrefabMgr.Ins.CreateCopy(BallDefines.CONSUME_COUNT_PREFAB_NAME);
 		ctobj.transform.SetParent(transform);
 		Vector3 pos = transform.InverseTransformPoint(targetPos);
 		pos.z = 0;
@@ -18,7 +18,7 @@ public class TextCreator : MonoBehaviour
 
 	public void CreateDropCountText(int iCount, Vector3 targetPos)
 	{
-		GameObject dctobj = PrefabMgr.Instance.CreateCopy(BallDefines.DROP_COUNT_PREFAB_NAME);
+		GameObject dctobj = PrefabMgr.Ins.CreateCopy(BallDefines.DROP_COUNT_PREFAB_NAME);
 		dctobj.transform.SetParent(transform);
 		targetPos.z = 0;
 		//		ctobj.transform.localPosition = targetPos; // TODO test if the movable position is better

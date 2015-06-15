@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class SpecialBall : Ball 
@@ -18,7 +18,7 @@ public class SpecialBall : Ball
 
 	public static Ball Create (BallRow ballRow, SpecialBallType ballType)
 	{
-		GameObject ball = PrefabMgr.Instance.CreateCopy (PrefabName);
+		GameObject ball = PrefabMgr.Ins.CreateCopy (PrefabName);
 		ball.layer = Layers.StaticBall;
 		ball.name = PrefabName + "_" + ballType.ToString();
 		SpecialBall b = ball.GetComponent<SpecialBall> ();

@@ -298,7 +298,7 @@ public class BallRow : MonoBehaviour
 
 	public static BallRow Create (bool mbOffsetRow)
 	{
-		GameObject bow = PrefabMgr.Instance.CreateCopy (PrefabName);
+		GameObject bow = PrefabMgr.Ins.CreateCopy (PrefabName);
 		bow.name = PrefabName;
 		BallRow br = bow.GetComponent<BallRow> ();
 		br.Init (mbOffsetRow);

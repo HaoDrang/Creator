@@ -10,14 +10,16 @@ namespace Game.Logic.Clip
 		protected UnityEngine.Transform mtTransform = null;
 		protected UnityEngine.Vector3 mvBasePos = default(UnityEngine.Vector3);
 
-		public BallShakeClip (float fHOffset, float fVOffset, 
-		                      UnityEngine.Transform trans, 
-		                      float during, Action cb) : base(during, cb)
+		protected const string BallShake_Key 		= "ballshake";
+		protected const string Vertical_Offset_Key 	= "vo";
+		protected const string Horizontal_Offset_Key= "ho";
+		protected const string During_Key = "during";
+
+		public BallShakeClip ()
 		{
-			mfHorizontalOffset 	= fHOffset;
-			mfVerticalOffset 	= fVOffset;
-			mtTransform = trans;
-			mvBasePos = mtTransform.localPosition;
+			mfHorizontalOffset 	= Property.Ins.GetFloat(BallShake_Key + "." + Horizontal_Offset_Key);
+			mfVerticalOffset 	= Property.Ins.GetFloat(BallShake_Key + "." + Vertical_Offset_Key);
+			mfDuring 			= Property.Ins.GetFloat (BallShake_Key + "." + During_Key);
 		}
 
 		public override void Process (float curTime)
@@ -38,6 +40,14 @@ namespace Game.Logic.Clip
 			mtTransform.localPosition = mvBasePos;
 			// call the baseclass end function last
 			base.End ();
+		}
+
+		public override void Play (UnityEngine.Transform trans, Action cb)
+		{
+			mtTransform = trans;
+			mvBasePos 	= mtTransform.localPosition;
+			maCallBack	= cb;
+			base.Play ();
 		}
 
 		private float CalculateValue(float percent)

@@ -122,3 +122,8 @@ achievement.2.keyname = "shoot6times"
 achievement.2.displayname = "Shoot! Six Times!"
 achievement.2.event = 17
 achievement.2.eventmax = 6
+
+//animation props
+ballshake.vo = 5
+ballshake.ho = 8
+ballshake.during = 0.5

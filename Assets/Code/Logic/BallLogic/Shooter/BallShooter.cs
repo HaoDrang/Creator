@@ -98,7 +98,7 @@ public class BallShooter : MonoBehaviour {
 
 		switch (eBallType) {
 		case BallType.Regular:
-			GameObject rbBallObj = PrefabMgr.Instance.CreateCopy (RegularPrefabName);
+			GameObject rbBallObj = PrefabMgr.Ins.CreateCopy (RegularPrefabName);
 			RegularBall rb = rbBallObj.GetComponent<RegularBall>();
 			rb.Init(null, param1);
 			rb.Shoot(this.mParentTrans, mBigBallSlot.transform.position,  
@@ -106,7 +106,7 @@ public class BallShooter : MonoBehaviour {
 			         mCollideCallBack);
 			break;
 		case BallType.PowerUp:
-			GameObject spBallObj = PrefabMgr.Instance.CreateCopy (SpecialPrefabName);
+			GameObject spBallObj = PrefabMgr.Ins.CreateCopy (SpecialPrefabName);
 			SpecialBall sb = spBallObj.GetComponent<SpecialBall>();
 			sb.Init(null, (int)BallColor.Gold, (SpecialBallType)param1);
 			ShootBall(sb);

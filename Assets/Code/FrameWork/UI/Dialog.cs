@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -36,7 +36,7 @@ public class Dialog : MonoBehaviour
 		cr.SetAlpha(0);
 		yield return null;
 		// build UI
-		BuildUI(Property.Instante);
+		BuildUI(Property.Ins);
 		yield return null;
 		cr.SetAlpha(1);
 		mUIReady = true;
