@@ -8,11 +8,11 @@ namespace Game.Logic.Clip
 		[UnityEngine.SerializeField]
 		private GridPushDone mPushEvt = null;
 		private int miStep = 1;
+		private bool mbMoving = false;
 		public override void Start ()
 		{
 			base.Start ();
 			if (_factory == null) {
-
 				ClipGenerator.Register<RowMoveClip> (() => new RowMoveClip (transform, moveDone));
 			}
 		}
@@ -33,8 +33,11 @@ namespace Game.Logic.Clip
 
 		public void Move(int istep)
 		{
+			if (mbMoving) {
+				return;
+			}
 			miStep = istep;
-		
+			mbMoving = true;
 			Play (ClipEnum.RowMove);
 		}
 
@@ -48,6 +51,7 @@ namespace Game.Logic.Clip
 
 		private void moveDone ()
 		{
+			mbMoving = false;
 			if (mPushEvt != null) {
 				mPushEvt.Invoke();
 			}

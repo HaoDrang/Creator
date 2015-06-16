@@ -14,9 +14,20 @@ namespace Game.Logic
 			_animator = GetComponent<RowAnimator> ();
 		}
 
+		void Start()
+		{
+			_animator.PushEvent.AddListener (PushDone);
+		}
+
 		public void Move (int iStep)
 		{
 			_animator.Move (iStep);
+		}
+
+		int tempCounter = 0;
+		void PushDone()
+		{
+			Debug.Log ("Push Done" + tempCounter++);
 		}
 	}
 }

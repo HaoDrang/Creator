@@ -47,6 +47,10 @@ namespace Game.Logic.Clip
 					mfTimeCounter += dt;
                     Process(mfTimeCounter);
                 }
+				else
+				{
+					End ();
+				}
 			}
 		}
 
@@ -58,6 +62,7 @@ namespace Game.Logic.Clip
 		virtual public void End ()
 		{
 			//reset the pos to right position
+			mbPlay = false;
 			if (maCallBack != null) {
 				maCallBack ();
 			}
