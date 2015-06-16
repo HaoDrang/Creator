@@ -23,6 +23,10 @@ namespace Game.Logic.Clip
 			mbPlay = true;
 		}
 
+		virtual public void Play(params object[] data)
+		{
+		}
+
 		virtual public void Play ()
 		{
 			mbPlay = true;
@@ -39,7 +43,7 @@ namespace Game.Logic.Clip
 		virtual public void Tick (float dt)
 		{
 			if (mbPlay) {
-				if (mfTimeCounter > mfDuring) {
+				if (mfTimeCounter < mfDuring) {
 					mfTimeCounter += dt;
                     Process(mfTimeCounter);
                 }

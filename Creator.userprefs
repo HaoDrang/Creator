@@ -1,12 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Clips\ActClip.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Row.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\BallLogic\BallDisposes\BallGrid.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\RowFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowMoveClip.cs" Line="7" Column="26" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\BallShakeClip.cs" Line="39" Column="32" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="5" Column="2" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="54" Column="4" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\AlgebraAnimator.cs" Line="27" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\BallAnimator.cs" Line="29" Column="2" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\BallEventDispatcher.cs" Line="8" Column="18" />
+      <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="31" Column="16" />
+      <File FileName="Assets\Code\Logic\Events\IGameInfoEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Events\IGameOverEventHandler.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

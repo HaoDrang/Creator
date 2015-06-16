@@ -1,12 +1,19 @@
+using UnityEngine;
+
 namespace Game.Logic
 {
-	public class Grid
+	public class Grid : MonoBehaviour
 	{
 		protected LevelConfig _config;
-//		protected Grid_RowFactory 
-		public Grid(LevelConfig conf)
+
+		public void Init(LevelConfig conf)
 		{
 			_config = conf;
+		}
+
+		virtual public void Reset()
+		{
+
 		}
 
 		virtual public void AddRow(int num)

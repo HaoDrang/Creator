@@ -18,6 +18,7 @@ namespace FrameWork
 			if (mContainer.ContainsKey (typeof(TReg))) {
 				mContainer [typeof(TReg)] = creator;
 			} else {
+				UnityEngine.Debug.Log("" + typeof(TReg));
 				mContainer.Add (typeof(TReg), creator);
 			}
 		}
@@ -32,9 +33,9 @@ namespace FrameWork
 			Func<T> creator = null;
 			mContainer.TryGetValue (typeof(TGet), out creator);
 			if (creator == null) {
-				return (TGet)creator ();
-			} else {
 				return (TGet)System.Activator.CreateInstance (typeof(TGet));
+			} else {
+				return (TGet)creator ();
 			}
 		}
 	}

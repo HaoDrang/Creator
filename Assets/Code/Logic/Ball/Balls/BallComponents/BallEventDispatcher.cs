@@ -3,7 +3,7 @@ using Game.Logic.Events;
 
 namespace Game.Logic
 {
-	public class BallEventListener : MonoBehaviour
+	public class BallEventDispatcher : MonoBehaviour
 	{
 		[SerializeField]
 		protected BallCollisionEvent

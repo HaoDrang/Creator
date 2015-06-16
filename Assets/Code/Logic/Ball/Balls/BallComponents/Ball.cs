@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 namespace Game.Logic
 {
-    [RequireComponent(typeof(BallEventListener))]
+    [RequireComponent(typeof(BallEventDispatcher))]
     [RequireComponent(typeof(BallController))]
 	public class Ball : MonoBehaviour, IRowHandler
 	{
 		[SerializeField]
-		protected BallEventListener _listener = null;
+		protected BallEventDispatcher _listener = null;
 		[SerializeField]
 		protected BallController _controller = null;
 
@@ -19,7 +19,7 @@ namespace Game.Logic
 
 		virtual public void Awake()
 		{
-			_listener = GetComponent<BallEventListener>();
+			_listener = GetComponent<BallEventDispatcher>();
 			_controller = GetComponent<BallController> ();
         }
         

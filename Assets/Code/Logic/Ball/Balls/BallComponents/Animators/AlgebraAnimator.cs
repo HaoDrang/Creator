@@ -6,7 +6,7 @@ namespace Game.Logic
 {
 	public class AlgebraAnimator : MonoBehaviour
 	{
-		private static ClipFactory _factory = null;
+		protected static ClipFactory _factory = null;
 
 		protected static ClipFactory ClipGenerator {
 			get {
@@ -19,33 +19,31 @@ namespace Game.Logic
 
 		private ActClip currentClip = null;
 
-		public void Start()
+		virtual public void Start()
 		{
-			if (_factory == null) {
-				ClipGenerator.Register<BallShakeClip>(()=>new BallShakeClip());
-			}
+
 		}
 
-		public void Play (ClipEnum clipEnum)
+		virtual public void Play (ClipEnum clipEnum)
 		{
 			if (currentClip != null) {
 				currentClip.Reset ();
 				currentClip = null;
 			}
-			switch (clipEnum) {
-			case ClipEnum.BallShake:
-				currentClip = ClipGenerator.Generate<BallShakeClip>();
-				break;
-			default:
-				break;
-			}
+
+			currentClip = GetCurrentClip (clipEnum);
 
 			if (currentClip != null) {
 				currentClip.Play ();
 			}
 		}
 
-		void Update ()
+		virtual protected ActClip GetCurrentClip (ClipEnum clipEnum)
+		{
+			return null;
+		}
+
+		private void Update ()
 		{
 			if (currentClip != null) {
 				currentClip.Tick (Time.deltaTime);

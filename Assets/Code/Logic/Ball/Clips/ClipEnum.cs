@@ -5,7 +5,10 @@ namespace Game.Logic.Clip
 		BallShake,
 		BallWave,
 		BallFadeOut,
+
 		ShooterDashBackNormal,
+
+		RowMove,
 	}
 }
 
