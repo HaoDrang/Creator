@@ -1,22 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\BallComponents\AlgebraAnimator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="e:\GitHub\Creator\Assets\Code\FrameWork\TFactory.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Clip\ActClip.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\Ball.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Appearance\BallDecorationsEnum.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Appearance\BallAppearance.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\AlgebraAnimator.cs" Line="24" Column="28" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallController.cs" Line="38" Column="21" />
-      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallEventListener.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipEnum.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ClipFactory.cs" Line="8" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\IRowHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Row.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Clip\ActClips\BallShakeClip.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="7" Column="2" />
-      <File FileName="Assets\Code\FrameWork\Tool\GameTool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_DisposeHandler.cs" Line="12" Column="55" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_StateHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_StaticHandler.cs" Line="11" Column="21" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_StateHandlerProvider.cs" Line="25" Column="30" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_ReadyHandler.cs" Line="11" Column="21" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_PrepareHandler.cs" Line="11" Column="21" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_MoveHandler.cs" Line="11" Column="21" />
+      <File FileName="Assets\Code\Logic\Ball\BallComponents\BallControllerHelpers\BallCtrl_FlyHandler.cs" Line="11" Column="21" />
+      <File FileName="e:\GitHub\Creator\Assets\Code\FrameWork\TFactory.cs" Line="16" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

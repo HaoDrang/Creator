@@ -117,7 +117,7 @@ public class Ball : MonoBehaviour
 	                          Vector2 velocity, BoolDelegate_GObj_GObj cb)
 	{
 		mTrigerCallBack = cb;
-		gameObject.layer = Layers.Ball;
+//		gameObject.layer = Layers.Ball;
 		transform.position = worldPos;
 		transform.SetParent (p);
 		transform.localScale = Vector3.one;
@@ -179,7 +179,7 @@ public class Ball : MonoBehaviour
 
 	virtual public void Fall (float delay)
 	{
-		gameObject.layer = Layers.FallingBall;
+//		gameObject.layer = Layers.FallingBall;
 		Rigidbody2D rb2d = GetComponent<Rigidbody2D> ();
 		rb2d.isKinematic = false;
 		rb2d.gravityScale = 1f;

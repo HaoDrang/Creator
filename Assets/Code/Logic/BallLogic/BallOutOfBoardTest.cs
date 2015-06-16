@@ -13,10 +13,10 @@ public class BallOutOfBoardTest : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == Tags.BALL && other.gameObject.layer == Layers.StaticBall) 
-		{
-			ExecuteEvents.Execute<IGameOverEventHandler>(mainObj, null, BallOverLoad);
-		}
+//		if (other.tag == Tags.BALL && other.gameObject.layer == Layers.StaticBall) 
+//		{
+//			ExecuteEvents.Execute<IGameOverEventHandler>(mainObj, null, BallOverLoad);
+//		}
 	}
 
 	void BallOverLoad (IGameOverEventHandler handler, BaseEventData eventData)

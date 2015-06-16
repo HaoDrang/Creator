@@ -35,7 +35,11 @@ namespace Game.Logic
 
 		virtual public void SetState(BallState state)
 		{
+			BallState former = state;
 			mState = state;
+			if (former != mState) {
+				_controller.StateChanged(former, mState);
+			}
 		}
  	}
 
@@ -44,6 +48,7 @@ namespace Game.Logic
 		PREPARE,
 		READY,
 		STATIC,
+		MOVE,
 		FLY,
 		DISPOSED,
 	}

@@ -4,7 +4,7 @@ public class PowerUpLogicBase
 {
 	virtual public void Shoot (GameObject obj, Transform p, Vector3 worldPos, Quaternion worldRot, Vector2 velocity)
 	{
-		obj.layer = Layers.Ball;
+//		obj.layer = Layers.Ball;
 		obj.transform.position = worldPos;
 		obj.transform.SetParent (p);
 		obj.transform.localScale = Vector3.one;

@@ -32,7 +32,7 @@ public class RegularBall : Ball
 	public static Ball Create (BallRow ballRow, int ballColor)
 	{
 		GameObject ball = PrefabMgr.Ins.CreateCopy (PrefabName);
-		ball.layer = Layers.StaticBall;
+//		ball.layer = Layers.StaticBall;
 		ball.name = PrefabName + "_" + ballColor.ToString();
 		RegularBall b = ball.GetComponent<RegularBall> ();
 		b.Init (ballRow, ballColor);

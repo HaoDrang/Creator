@@ -327,7 +327,7 @@ public class BallDisposer : MonoBehaviour
 		rb.rotation = 0f;
 
 		RegularBall b = shooted.GetComponent<RegularBall> ();
-		shooted.layer = Layers.StaticBall;
+//		shooted.layer = Layers.StaticBall;
 		b.SetBallRow (row, nicePos.index);
 		row.SetBall (b, nicePos.index);
 	}

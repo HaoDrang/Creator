@@ -30,7 +30,7 @@ public class PW_ChainSaw : PowerUpLogicBase
 		Ball b = target.GetComponent<Ball> ();
 		if (b != null) 
 		{
-			target.layer = Layers.FallingBall;
+//			target.layer = Layers.FallingBall;
 			Rigidbody2D rb2d = target.GetComponent<Rigidbody2D> ();
 			rb2d.isKinematic = false;
 			rb2d.gravityScale = 1f;

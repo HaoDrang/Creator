@@ -15,11 +15,16 @@ namespace Game.Logic
 
 		protected BallAppearance _appearance = null;
 
+		static protected BallCtrl_StateHandlerProvider _statehandler = null;
+
 		virtual protected void Awake()
 		{
 			// default appearance
 			_appearance = new BallAppearance (_ballimgs);
 			_animator 	= GetComponent<AlgebraAnimator>();
+			if (_statehandler == null) {
+				_statehandler = new BallCtrl_StateHandlerProvider ();
+			}
 		}
 		
 		virtual public void SetLayerImgs (UnityEngine.UI.Image[] images)
@@ -39,7 +44,15 @@ namespace Game.Logic
 			}
 		}
 
-		private string GetDecorationName (BLR ly, BallAppearanceLevel lv)
+		virtual public void StateChanged(BallState former, BallState current)
+		{
+			BallCtrl_StateHandler handler = _statehandler.GetHandler (current);
+			if (handler != null) {
+				handler.Execute(current, gameObject);
+			}
+		}
+
+		protected string GetDecorationName (BLR ly, BallAppearanceLevel lv)
 		{
 			string ret = "";
 			switch (ly) {
@@ -50,9 +63,10 @@ namespace Game.Logic
 				ret = BLR.BaseColor.ToString() + "_" + (int)lv;
 				break;
 			}
-
 			return ret;
 		}
+
+		virtual public AlgebraAnimator algebraAnimation{ get{ return _animator;} }
 	}
 }
 

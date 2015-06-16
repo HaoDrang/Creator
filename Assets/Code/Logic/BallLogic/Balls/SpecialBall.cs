@@ -19,7 +19,7 @@ public class SpecialBall : Ball
 	public static Ball Create (BallRow ballRow, SpecialBallType ballType)
 	{
 		GameObject ball = PrefabMgr.Ins.CreateCopy (PrefabName);
-		ball.layer = Layers.StaticBall;
+//		ball.layer = Layers.StaticBall;
 		ball.name = PrefabName + "_" + ballType.ToString();
 		SpecialBall b = ball.GetComponent<SpecialBall> ();
 		b.Init (ballRow, (int)BallColor.Green, ballType);
