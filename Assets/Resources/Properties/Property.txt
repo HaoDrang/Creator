@@ -127,3 +127,12 @@ achievement.2.eventmax = 6
 ballshake.vo = 5
 ballshake.ho = 8
 ballshake.during = 0.5
+
+rowmove.during = 0.5
+rowmove.steplength = 44
+rowmove.curve.keycount = 4
+rowmove.curve.0 = 0,0,0,0
+rowmove.curve.1 = 0.2,-0.1,0,0
+rowmove.curve.2 = 0.8,1.1,1.1,0
+rowmove.curve.3 = 0.9,0.95,0,0
+rowmove.curve.4 = 1,1,0,0

@@ -160,6 +160,21 @@ public class Property
 		return ret;
 	}
 
+	public float[] GetFloatArray (string key)
+	{
+		string temp = default(string);
+		mPropDic.TryGetValue (key, out temp);
+		float[] ret = null;
+		if (!string.IsNullOrEmpty (temp)) {
+			string[] split = temp.Split (',');
+			ret = new float[split.Length];
+			for (int i = 0; i < split.Length; i++) {
+				float.TryParse (split [i], out ret [i]);
+			}
+		}
+		return ret;
+	}
+
 	public  double GetDouble (string key)
 	{
 		string temp = default(string);
