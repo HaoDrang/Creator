@@ -130,7 +130,7 @@ ballshake.during = 0.5
 
 rowmove.during = 0.5
 rowmove.steplength = 44
-rowmove.curve.keycount = 4
+rowmove.curve.keycount = 5
 rowmove.curve.0 = 0,0,0,0
 rowmove.curve.1 = 0.2,-0.1,0,0
 rowmove.curve.2 = 0.8,1.1,1.1,0

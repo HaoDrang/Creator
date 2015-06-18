@@ -7,13 +7,13 @@ namespace Game.Logic.Clip
 	//b(t)=(1-t)^2P0 + 2t(1-t)P1 +t^2P2 t in [0,1]
 	public class RowMoveClip : ActClip
 	{
-		private int miStep = 1;
-		private float mfOffset = 1;
-		private Transform mtTrans = null;
-		private AnimationCurve mcCurve = null;
-		private Vector3 mvVector = default(Vector3);
-		private Property mProp = null;
-		private int	 miDirection = 1;
+		protected int miStep = 1;
+		protected float mfOffset = 1;
+		protected Transform mtTrans = null;
+		public AnimationCurve mcCurve = null;
+		protected Vector3 mvVector = default(Vector3);
+		protected Property mProp = null;
+		protected int	 miDirection = 1;
 		private const string RowMoveKey = "rowmove";
 		private const string DuringKey = "during";
 		private const string OffsetKey = "steplength";
@@ -79,7 +79,7 @@ namespace Game.Logic.Clip
 			}
 		}
 
-		private void MovePos (float f)
+		protected void MovePos (float f)
 		{
 			Vector3 pos = mvVector;
 			pos.y -= f;
@@ -109,7 +109,7 @@ namespace Game.Logic.Clip
 			mfTimeCounter = 0f;
 		}
 
-		private float CalculateValue (float f)
+		virtual protected float CalculateValue (float f)
 		{
 			return mcCurve.Evaluate (f) * mfOffset * miDirection;
 		}

@@ -24,6 +24,11 @@ namespace Game.Logic
 			_animator.Move (iStep);
 		}
 
+		public void LongMove(float length)
+		{
+			_animator.LongMove (length);
+		}
+
 		int tempCounter = 0;
 		void PushDone()
 		{

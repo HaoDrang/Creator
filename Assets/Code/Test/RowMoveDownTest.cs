@@ -17,6 +17,7 @@ public class RowMoveDownTest : MonoBehaviour {
 
 	public void OnButtonClick()
 	{
-		r.Move (10);
+//		r.Move (10);
+		r.LongMove (400f);
 	}
 }

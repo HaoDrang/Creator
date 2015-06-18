@@ -18,7 +18,6 @@ namespace Game.Logic
 		}
 
 		private ActClip currentClip = null;
-
 		virtual public void Start()
 		{
 

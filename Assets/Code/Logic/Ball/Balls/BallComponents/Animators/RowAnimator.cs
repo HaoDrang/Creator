@@ -1,11 +1,14 @@
 using System;
 using Game.Logic.Events;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Game.Logic.Clip
 {
 	public class RowAnimator : AlgebraAnimator
 	{
+		public AnimationCurve ac1 = null;
+		public AnimationCurve ac2 = null;
 		[UnityEngine.SerializeField]
 		private GridPushDone mPushEvt = null;
 		private int miStep = 1;
@@ -18,6 +21,7 @@ namespace Game.Logic.Clip
 			mcClipQ = new Queue<ActClip> ();
 			if (_factory == null) {
 				ClipGenerator.Register<RowMoveClip> (() => new RowMoveClip (transform, moveDone));
+				ClipGenerator.Register<RowLongMoveClip> (() => new RowLongMoveClip (transform, moveDone));
 			}
 		}
 		
@@ -35,6 +39,9 @@ namespace Game.Logic.Clip
 			switch (clipEnum) {
 			case ClipEnum.RowMove:
 				mcCurrentClip = ClipGenerator.Generate<RowMoveClip> ();
+				break;
+			case ClipEnum.RowLongMove:
+				mcCurrentClip = ClipGenerator.Generate<RowLongMoveClip>();
 				break;
 			default:
 				break;
@@ -57,6 +64,23 @@ namespace Game.Logic.Clip
 
 			mbMoving = true;
 			Play (ClipEnum.RowMove);
+		}
+
+		public void LongMove (float length)
+		{
+			int d = (int)UnityEngine.Mathf.Sign (length);
+			RowLongMoveClip rlmc = (RowLongMoveClip)GenerateClip(ClipEnum.RowLongMove);
+			ac1 =  new AnimationCurve (rlmc.mcCurve.keys);
+			rlmc.LongMove (length);
+			ac2 = rlmc.mcCurve;
+			mcClipQ.Enqueue (rlmc);
+
+			if (mbMoving) {
+				return;
+			}
+			
+			mbMoving = true;
+			Play (ClipEnum.RowLongMove);
 		}
 
 		public GridPushDone PushEvent

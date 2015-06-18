@@ -9,6 +9,7 @@ namespace Game.Logic.Clip
 		ShooterDashBackNormal,
 
 		RowMove,
+		RowLongMove,
 	}
 }
 
