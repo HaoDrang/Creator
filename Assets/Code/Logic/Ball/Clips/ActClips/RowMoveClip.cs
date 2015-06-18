@@ -3,6 +3,8 @@ using UnityEngine;
 
 namespace Game.Logic.Clip
 {
+	//make a beseril ur self
+	//b(t)=(1-t)^2P0 + 2t(1-t)P1 +t^2P2 t in [0,1]
 	public class RowMoveClip : ActClip
 	{
 		private int miStep = 1;
