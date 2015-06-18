@@ -68,6 +68,11 @@ namespace Game.Logic.Clip
 
 		public void LongMove (float length)
 		{
+			if (mbMoving && mcCurrentClip != null
+			    && mcCurrentClip.GetType() == typeof(RowLongMoveClip)) {
+				return;
+			}
+
 			int d = (int)UnityEngine.Mathf.Sign (length);
 			RowLongMoveClip rlmc = (RowLongMoveClip)GenerateClip(ClipEnum.RowLongMove);
 			ac1 =  new AnimationCurve (rlmc.mcCurve.keys);
