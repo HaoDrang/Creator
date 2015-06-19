@@ -1,5 +1,6 @@
 using UnityEngine;
 using Game.Logic.Clip;
+using System;
 
 
 namespace Game.Logic
@@ -8,7 +9,7 @@ namespace Game.Logic
 	public class Row : MonoBehaviour
 	{
 		private RowAnimator _animator = null;
-
+		private int miNum = 0;
 		void Awake()
 		{
 			_animator = GetComponent<RowAnimator> ();
@@ -17,6 +18,11 @@ namespace Game.Logic
 		void Start()
 		{
 			_animator.PushEvent.AddListener (PushDone);
+		}
+
+		public void SetNumber (int i)
+		{
+			miNum = i;
 		}
 
 		public void Move (int iStep)
@@ -33,6 +39,11 @@ namespace Game.Logic
 		void PushDone()
 		{
 			Debug.Log ("Push Done" + tempCounter++);
+		}
+
+		public void Waste ()
+		{
+			throw new NotImplementedException ();
 		}
 	}
 }

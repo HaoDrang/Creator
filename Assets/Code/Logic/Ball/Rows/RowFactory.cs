@@ -2,9 +2,19 @@ namespace Game.Logic
 {
 	public class RowFactory
 	{
-		public virtual Row Generate(LevelConfig conf)
+		const string RowPrefabName = "RowPrefab";
+
+		private LevelConfig mConfig = null;
+
+		public RowFactory(LevelConfig conf)
 		{
-			return null;
+			mConfig = conf;
+		}
+
+		public virtual Row Generate()//+++
+		{
+			UnityEngine.GameObject rowObj = PrefabMgr.Ins.CreateCopy (RowPrefabName);
+			return rowObj.GetComponent<Row>();
 		}
 	}
 }

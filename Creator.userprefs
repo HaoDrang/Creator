@@ -1,17 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Test\RowMoveDownTest.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Grids\RowList.cs">
     <Files>
+      <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Test\RowMoveDownTest.cs" Line="19" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="24" Column="17" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="40" Column="11" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowMoveClip.cs" Line="115" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="30" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\BallShakeClip.cs" Line="22" Column="4" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowMoveClip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\BallShakeClip.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\AlgebraAnimator.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\FrameWork\PropertyManager\Property.cs" Line="155" Column="1" />
-      <File FileName="Assets\Resources\Properties\Property.txt" Line="138" Column="22" />
+      <File FileName="Assets\Code\FrameWork\PropertyManager\Property.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Properties\Property.txt" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="12" Column="20" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\RowList.cs" Line="40" Column="23" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\IRowList.cs" Line="19" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
