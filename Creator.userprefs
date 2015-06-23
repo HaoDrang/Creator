@@ -1,19 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Rows\Row.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Grids\Grid.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Balls\NormalBall.cs" Line="18" Column="85" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Ball.cs" Line="9" Column="2" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\BallControllers\NormalBallController.cs" Line="13" Column="4" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\BallControllers\BallController.cs" Line="28" Column="4" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\BallEventDispatcher.cs" Line="32" Column="58" />
-      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="46" Column="17" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\BallControllers\BallController.cs" Line="37" Column="22" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="48" Column="30" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\GridUtils.cs" Line="3" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" line="27" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
