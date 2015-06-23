@@ -18,6 +18,5 @@ namespace Game.Logic
 		void LongMove(float length);
 		void Destroy();
 	}
-
 }
 

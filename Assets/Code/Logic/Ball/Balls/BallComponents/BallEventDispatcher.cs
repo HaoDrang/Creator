@@ -27,6 +27,9 @@ namespace Game.Logic
 				_ShootEvt.Invoke (angle, ball);
 			}
 		}
+
+		public BallCollisionEvent CollideEvent{ get{ return _CollisionEvt;} }
+		public BallShootEvent ShootEvent{ get{ return _ShootEvt;} }
 	}
 }
 

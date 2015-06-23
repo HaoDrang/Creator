@@ -41,6 +41,11 @@ namespace Game.Logic
 				_controller.StateChanged(former, mState);
 			}
 		}
+
+		protected T GetController<T>() where T: BallController
+		{
+			return (T)_controller;
+		}
  	}
 
 	public enum BallState

@@ -12,7 +12,11 @@ namespace Game.Logic
 {
 	public class NormalBall : Ball
 	{
-
+		public override void Awake ()
+		{
+			base.Awake ();
+			_listener.CollideEvent.AddListener (GetController<NormalBallController>().Collision);
+		}
 	}
 }
 
