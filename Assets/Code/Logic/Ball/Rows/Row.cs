@@ -9,6 +9,7 @@ namespace Game.Logic
 	public class Row : MonoBehaviour
 	{
 		private RowAnimator _animator = null;
+		private LevelConfig _config = null;
 		private int miNum = 0;
 		void Awake()
 		{
@@ -18,6 +19,11 @@ namespace Game.Logic
 		void Start()
 		{
 			_animator.PushEvent.AddListener (PushDone);
+		}
+
+		public void Init (LevelConfig conf)
+		{
+			_config = conf;
 		}
 
 		public void SetNumber (int i)
@@ -44,6 +50,20 @@ namespace Game.Logic
 		public void Waste ()
 		{
 			throw new NotImplementedException ();
+		}
+
+		public void Fill(BallFactory generator)
+		{
+			//temp create
+			// use temp create function instead
+			//infact we put the manager into generator so the manager could decouple with the Row
+			for (int i = 0; i < 20; i++) {
+				GameObject obj = PrefabMgr.Ins.CreateCopy ("NormalBall");
+				obj.name = "test object";
+				obj.transform.SetParent (transform);
+			}
+
+			print ("Fill Row Ready");
 		}
 	}
 }

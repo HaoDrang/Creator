@@ -8,6 +8,7 @@ namespace Game.Logic
 	{
 		protected LevelConfig 	_config;
 		protected RowList 		_rows;
+//		protected ReverseList   _reverse;
 		private RowFactory 		_rowFactory;
 		protected bool mbCreatingRow = false;
 		public void Init(LevelConfig conf)
@@ -47,6 +48,7 @@ namespace Game.Logic
 				r = _rowFactory.Generate();
 				GridUtils.SetRowPosInGrid(r, this);
 				r.LongMove(GridUtils.GetLongMoveDistance(i));
+				_rows.AddBottom(r);
 				yield return null;
 			}
 
