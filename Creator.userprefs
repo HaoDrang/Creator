@@ -1,15 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Rows\Row.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="49" Column="23" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\RowList.cs" Line="66" Column="3" />
-      <File FileName="Assets\Code\Logic\Events\GameEvent.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Events\BallCollisionEvent.cs" Line="36" Column="12" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="10" Column="28" />
-      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="41" Column="4" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallFactory.cs" Line="4" Column="26" />
-      <File FileName="Assets\Code\Logic\Defines\LevelConfig.cs" Line="25" Column="37" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="59" Column="89" />
+      <File FileName="Assets\Code\Test\TestRow.cs" Line="21" Column="7" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\RowFactory.cs" Line="3" Column="25" />
+      <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="31" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
