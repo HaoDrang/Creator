@@ -13,7 +13,15 @@ namespace Game.Logic
 {
 	public class SuperBall : Ball
 	{
+		public void Init (LevelConfig mLevelConfig)
+		{
+			throw new System.NotImplementedException ();
+		}
 
+		public void SetSuperType (SpecialBallType specialBallType)
+		{
+			throw new System.NotImplementedException ();
+		}
 	}
 }
 

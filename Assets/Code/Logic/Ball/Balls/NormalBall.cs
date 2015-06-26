@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using UnityEngine;
+
+
 namespace Game.Logic
 {
 	public class NormalBall : Ball
@@ -16,6 +19,16 @@ namespace Game.Logic
 		{
 			base.Awake ();
 			_listener.CollideEvent.AddListener (GetController<NormalBallController>().Collision);
+		}
+
+		public void Init (LevelConfig conf)
+		{
+			mLevelConfig = conf;
+		}
+
+		public void SetColor (int n)
+		{
+			Color c = mLevelConfig.mColors[n];
 		}
 	}
 }

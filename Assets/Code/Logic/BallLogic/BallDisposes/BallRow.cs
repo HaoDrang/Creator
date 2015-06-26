@@ -273,7 +273,7 @@ public class BallRow : MonoBehaviour
 			}
 
 			if (--miPowerUpCount <= 0) {
-				return MakePowerUp (conf.eTypes, bStatic);
+				return MakePowerUp (conf.meSuperBallTypes, bStatic);
 			}
 		}
 

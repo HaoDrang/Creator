@@ -4,6 +4,7 @@ namespace Game.Logic
 	{
 		public static void SetRowPosInGrid(Row r, Grid g)
 		{
+//			r.transform
 			throw new System.NotImplementedException ();
 		}
 

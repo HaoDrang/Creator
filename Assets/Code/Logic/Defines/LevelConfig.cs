@@ -8,7 +8,7 @@ public class LevelConfig
 	public int[] 	mWidth;
 	public int 		miColorCount = 3;
 	public Color[] 	mColors;
-	public SpecialBallType[] eTypes;
+	public SpecialBallType[] meSuperBallTypes;
 	public int	 	mEmptyOdds 			= 0;//0-100
 	public int		mMoveDownCount 		= 8;
 	public int 		mMatchingBallCount 	= 3;
@@ -61,7 +61,7 @@ public class LevelConfig
 			lc.mPowerUpDelayInitial = prop.GetIntArray(key + PowerUpDelayInitialKey);
 			lc.mPowerUpDelay = prop.GetIntArray(key + PowerUpDelay);
 			lc.mDifficult = (LevelEnum)i;
-			lc.eTypes = Array.ConvertAll<int,SpecialBallType>(
+			lc.meSuperBallTypes = Array.ConvertAll<int,SpecialBallType>(
 				prop.GetIntArray(key + SpecialBallKey),
 				iInput => (SpecialBallType)iInput);
 

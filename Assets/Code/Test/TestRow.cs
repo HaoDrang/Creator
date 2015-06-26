@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Game.Logic;
 
 public class TestRow : MonoBehaviour {
 
@@ -18,6 +19,7 @@ public class TestRow : MonoBehaviour {
 
 	public void FillRow()
 	{
-		r.Fill (null);
+		GridBallFactory fac = new GridBallFactory (_config);
+		r.Fill (fac);
 	}
 }

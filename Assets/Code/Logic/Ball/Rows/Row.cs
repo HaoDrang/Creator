@@ -10,10 +10,12 @@ namespace Game.Logic
 	{
 		private RowAnimator _animator = null;
 		private LevelConfig _config = null;
+        private RowArrangerProvider _arranger = null;
 		private int miNum = 0;
 		void Awake()
 		{
 			_animator = GetComponent<RowAnimator> ();
+            _arranger = new RowArrangerProvider();
 		}
 
 		void Start()
@@ -52,17 +54,21 @@ namespace Game.Logic
 			throw new NotImplementedException ();
 		}
 
-		public void Fill(BallFactory generator)
+		public void Fill(GridBallFactory generator) //++ up to 30ms
 		{
-			//temp create
-			// use temp create function instead
-			//infact we put the manager into generator so the manager could decouple with the Row
-			for (int i = 0; i < 20; i++) {
-				GameObject obj = PrefabMgr.Ins.CreateCopy ("NormalBall");
-				obj.name = "test object";
-				obj.transform.SetParent (transform);
+			var tn = System.DateTime.Now;
+			print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
+			IRowArrangeBall arrange = _arranger.GetArranger<RegularRowArranger> ();
+			Transform selfTrans = transform;
+			GameObject newBallObj = null;
+			for (int i = 0; i < 20; i++) {//TODO change it to config
+				Ball b = generator.GenerateBall(false);
+				newBallObj = b.gameObject;
+				arrange.Arrange(newBallObj, selfTrans, i);
 			}
-
+			tn = System.DateTime.Now;
+			print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
+			
 			print ("Fill Row Ready");
 		}
 	}

@@ -2,7 +2,7 @@ namespace Game.Logic
 {
 	public class RowFactory
 	{
-		const string RowPrefabName = "RowPrefab";
+		const string RowPrefabName = "Row";
 
 		private LevelConfig mConfig = null;
 

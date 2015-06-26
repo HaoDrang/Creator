@@ -10,12 +10,14 @@ namespace Game.Logic
 		protected RowList 		_rows;
 //		protected ReverseList   _reverse;
 		private RowFactory 		_rowFactory;
+		private GridBallFactory _ballFactory;
 		protected bool mbCreatingRow = false;
 		public void Init(LevelConfig conf)
 		{
 			_config = conf;
 			_rows = new RowList ();
 			_rowFactory = new RowFactory (_config);
+			_ballFactory = new GridBallFactory (_config);
 		}
 
 		virtual public void Reset()
@@ -46,6 +48,7 @@ namespace Game.Logic
 			Row r = null;
 			for (int i = 0; i < num; i++) {
 				r = _rowFactory.Generate();
+				r.Fill(_ballFactory);
 				GridUtils.SetRowPosInGrid(r, this);
 				r.LongMove(GridUtils.GetLongMoveDistance(i));
 				_rows.AddBottom(r);

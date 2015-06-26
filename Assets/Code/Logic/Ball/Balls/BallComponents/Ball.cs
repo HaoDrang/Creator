@@ -17,6 +17,8 @@ namespace Game.Logic
 
 		protected Row mRow = null;
 
+		protected LevelConfig mLevelConfig = null;
+
 		virtual public void Awake()
 		{
 			_listener = GetComponent<BallEventDispatcher>();
