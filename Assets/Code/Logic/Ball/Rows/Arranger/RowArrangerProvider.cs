@@ -26,12 +26,12 @@ namespace Game.Logic
 			Register (typeof(RegularRowArranger), new RegularRowArranger());
 		}
 
-		void Register (Type type, RegularRowArranger regularRowArranger)
+		void Register (Type type, IRowArrangeBall arranger)
 		{
 			if (_container.ContainsKey (type)) {
-				_container [type] = regularRowArranger;
+				_container [type] = arranger;
 			} else {
-				_container.Add(type, regularRowArranger);
+				_container.Add(type, arranger);
 			}
 		}
 
