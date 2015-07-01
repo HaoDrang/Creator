@@ -11,6 +11,7 @@ namespace Game.Logic
 		private RowAnimator _animator = null;
 		private LevelConfig _config = null;
 		private int miNum = 0;
+		private bool mbOffset = false;
 		static private RowArrangerProvider _arranger = null;
 		static private RowFillerProvider _filler = null;
 		void Awake()
@@ -55,7 +56,7 @@ namespace Game.Logic
 			throw new NotImplementedException ();
 		}
 
-		public void Fill(GridBallFactory generator) //++ up to 30ms
+		public void Fill(GridBallFactory generator) //++
 		{
 			//var tn = System.DateTime.Now;
 			//print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
@@ -65,7 +66,7 @@ namespace Game.Logic
 
 			IRowBallFiller filler = _filler.GetFiller<RandomRowFiller>();
 
-			filler.CreateRandomBalls (transform, generator, _config, arrange);
+			filler.CreateRandomBalls (this, generator, _config, arrange);
 //			for (int i = 0; i < 20; i++) {//TODO change it to config
 //				Ball b = generator.GenerateBall(false);
 //				newBallObj = b.gameObject;
@@ -75,6 +76,15 @@ namespace Game.Logic
 			//print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
 			
 			//print ("Fill Row Ready");
+		}
+
+		public Ball GetBall (int i)
+		{
+			throw new System.NotImplementedException ();
+		}
+
+		public bool IsOffset {
+			get{ return mbOffset; }
 		}
 	}
 }
