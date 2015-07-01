@@ -12,6 +12,9 @@ namespace Game.Logic.Clip
 
 		public void LongMove(float l)
 		{
+			if (l <= 0) {
+				return;
+			}
 			float f1 = mfOffset * mcCurve.keys [1].value;
 			float f2 = mfOffset * (mcCurve.keys [mcCurve.keys.Length - 3].value);
 			float f3 = mfOffset * (mcCurve.keys [mcCurve.keys.Length - 2].value);

@@ -42,6 +42,7 @@ namespace Game.Logic
 			return null;
 		}
 
+
 		private void Update ()
 		{
 			if (currentClip != null) {

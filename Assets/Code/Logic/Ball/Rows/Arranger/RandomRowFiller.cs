@@ -15,8 +15,8 @@ namespace Game.Logic
 		{
 			UnityEngine.Transform trans = curRow.transform;
 			int emptyChance = conf.mEmptyOdds;
-			int initTo = conf.mWidth [0];
-			int initFrom = conf.mWidth [1];
+			int initTo = conf.mWidth [1];
+			int initFrom = conf.mWidth [0];
 			//create balls by chance
 			int slotNum = initTo - initFrom;
 			int ballNum = slotNum * (100 - emptyChance) / 100;

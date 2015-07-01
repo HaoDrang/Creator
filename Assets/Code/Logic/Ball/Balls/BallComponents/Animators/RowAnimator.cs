@@ -15,14 +15,18 @@ namespace Game.Logic.Clip
 		private bool mbMoving = false;
 		private ActClip mcCurrentClip = null;
 		private Queue<ActClip> mcClipQ = null;
+
+		public void Awake()
+		{
+			mcClipQ = new Queue<ActClip> ();
+
+			ClipGenerator.Register<RowMoveClip> (() => new RowMoveClip (transform, moveDone));
+			ClipGenerator.Register<RowLongMoveClip> (() => new RowLongMoveClip (transform, moveDone));
+		}
+
 		public override void Start ()
 		{
 			base.Start ();
-			mcClipQ = new Queue<ActClip> ();
-			if (_factory == null) {
-				ClipGenerator.Register<RowMoveClip> (() => new RowMoveClip (transform, moveDone));
-				ClipGenerator.Register<RowLongMoveClip> (() => new RowLongMoveClip (transform, moveDone));
-			}
 		}
 		
 		protected override ActClip GetCurrentClip (ClipEnum clipEnum)
@@ -41,6 +45,7 @@ namespace Game.Logic.Clip
 				mcCurrentClip = ClipGenerator.Generate<RowMoveClip> ();
 				break;
 			case ClipEnum.RowLongMove:
+//				MonoBehaviour.print("generator a long move clip");
 				mcCurrentClip = ClipGenerator.Generate<RowLongMoveClip>();
 				break;
 			default:

@@ -16,8 +16,9 @@ namespace Game.Logic
 		static private RowFillerProvider _filler = null;
 		void Awake()
 		{
-			_animator = GetComponent<RowAnimator> ();
-            _arranger = new RowArrangerProvider();
+			_animator 	= GetComponent<RowAnimator> ();
+            _arranger 	= new RowArrangerProvider();
+			_filler 	= new RowFillerProvider ();
 		}
 
 		void Start()
@@ -67,11 +68,6 @@ namespace Game.Logic
 			IRowBallFiller filler = _filler.GetFiller<RandomRowFiller>();
 
 			filler.CreateRandomBalls (this, generator, _config, arrange);
-//			for (int i = 0; i < 20; i++) {//TODO change it to config
-//				Ball b = generator.GenerateBall(false);
-//				newBallObj = b.gameObject;
-//				arrange.Arrange(newBallObj, selfTrans, i);
-//			}
 			//tn = System.DateTime.Now;
 			//print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
 			

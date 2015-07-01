@@ -30,6 +30,10 @@ namespace Game.Logic.Clip
 			}
 		}
 
+		public RowMoveClip()
+		{
+		}
+
 		public RowMoveClip (UnityEngine.Transform trans, Action cb)
 		{
 			maCallBack = cb;
@@ -40,7 +44,7 @@ namespace Game.Logic.Clip
 			mfOffset = mProp.GetFloat (RowMoveKey + "." + OffsetKey);
 
 			int keyNum = mProp.GetInt (RowMoveKey + "." + CurveKey + "." + CurveKeyCount);
-
+			MonoBehaviour.print ("init a row move clip ");
 			if (keyNum > 0) {
 				mcCurve = new AnimationCurve ();
 				for (int i = 0; i < keyNum; i++) {
@@ -75,6 +79,12 @@ namespace Game.Logic.Clip
 		public override void Process (float curTime)
 		{
 			if (mtTrans != null) {
+//				float value = CalculateValue (PlayPercent);
+//				if (float.IsNaN(value)) {
+//					MonoBehaviour.print("Nan Appearance! " + curTime);
+//					MonoBehaviour.print("Current Curve State: " + mcCurve.keys.Length);
+//				}
+//				else
 				MovePos (CalculateValue (PlayPercent));
 			}
 		}

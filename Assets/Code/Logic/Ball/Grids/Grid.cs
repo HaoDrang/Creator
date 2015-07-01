@@ -48,6 +48,7 @@ namespace Game.Logic
 			Row r = null;
 			for (int i = 0; i < num; i++) {
 				r = _rowFactory.Generate();
+				r.Init(_config);
 				r.Fill(_ballFactory);
 				GridUtils.SetRowPosInGrid(r, this);
 				r.LongMove(GridUtils.GetLongMoveDistance(i));

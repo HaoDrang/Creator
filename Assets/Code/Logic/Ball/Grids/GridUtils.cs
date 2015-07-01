@@ -15,7 +15,9 @@ namespace Game.Logic
 
 		public static float GetLongMoveDistance (int i)
 		{
-			throw new System.NotImplementedException ();
+//			UnityEngine.MonoBehaviour.print ("move forward! " + i);
+			return Configs.BALL_SIZE.y * (i + 1);
+			//throw new System.NotImplementedException ();
 		}
 	}
 }
