@@ -51,13 +51,20 @@ namespace Game.Logic
 				r.Init(_config);
 				r.Fill(_ballFactory);
 				GridUtils.SetRowPosInGrid(r, this);
-				r.LongMove(GridUtils.GetLongMoveDistance(i));
+				r.LongMove(GridUtils.GetLongMoveDistance(num - i));
 				_rows.AddBottom(r);
 				yield return null;
 			}
-
+			Renumber ();
 			mbCreatingRow = false;
 			yield break;
+		}
+
+		protected void Renumber()
+		{
+			for (int i = 0; i < _rows.Count; i++) {
+				_rows[i].SetNumber(i);
+			}
 		}
 	}
 }

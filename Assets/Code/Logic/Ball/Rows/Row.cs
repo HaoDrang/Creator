@@ -34,6 +34,7 @@ namespace Game.Logic
 		public void SetNumber (int i)
 		{
 			miNum = i;
+			name = "Row_" + i;
 		}
 
 		public void Move (int iStep)
