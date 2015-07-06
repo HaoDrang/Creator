@@ -8,7 +8,7 @@ namespace Game.Logic
 	{
 		protected LevelConfig 	_config;
 		protected RowList 		_rows;
-//		protected ReverseList   _reverse;
+		protected ReverseList   _reverse;
 		private RowFactory 		_rowFactory;
 		private GridBallFactory _ballFactory;
 		protected bool mbCreatingRow = false;
@@ -18,12 +18,14 @@ namespace Game.Logic
 			_rows = new RowList ();
 			_rowFactory = new RowFactory (_config);
 			_ballFactory = new GridBallFactory (_config);
+			_reverse = new ReverseList ();
 		}
 
 		virtual public void Reset()
 		{
 			_rows.Destroy ();
 			_rows = new RowList ();
+			_reverse.Clear ();
 		}
 
 		virtual public void AddRow(int num)
@@ -35,9 +37,16 @@ namespace Game.Logic
 			StartCoroutine (CreateRowList(num));
 		}
 
-		virtual public void AddRow()
+		virtual public void AddRow(Row r, bool bTop = false)
 		{
-
+			r.Init(_config);
+			GridUtils.SetRowPosInGrid(r, this);
+			if (bTop) {
+				_rows.AddBottom(r);
+			} else {
+				_rows.AddTop(r);	
+			}
+			Renumber ();
 		}
 
 		protected IEnumerator CreateRowList(int num)
