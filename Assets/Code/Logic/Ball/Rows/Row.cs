@@ -68,7 +68,7 @@ namespace Game.Logic
 
 			IRowBallFiller filler = _filler.GetFiller<RandomRowFiller>();
 
-			filler.CreateRandomBalls (this, generator, _config, arrange);
+			filler.CreateBall (this, generator, _config, arrange);
 			//tn = System.DateTime.Now;
 			//print ("Begin Time: " + tn.Minute + ":" + tn.Second + ":" + tn.Millisecond);
 			

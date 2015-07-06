@@ -51,7 +51,8 @@ namespace Game.Logic
 				r.Init(_config);
 				r.Fill(_ballFactory);
 				GridUtils.SetRowPosInGrid(r, this);
-				r.LongMove(GridUtils.GetLongMoveDistance(num - i));
+				GridUtils.SetRowPreparePos(r, i);
+				r.LongMove(GridUtils.GetLongMoveDistance(num));
 				_rows.AddBottom(r);
 				yield return null;
 			}

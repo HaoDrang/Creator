@@ -1,28 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\AlgebraAnimator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Logic\Ball\Rows\Row.cs">
     <Files>
-      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="46" Column="18" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="54" Column="10" />
-      <File FileName="Assets\Code\Logic\Ball\Rows\Arranger\RandomRowFiller.cs" Line="24" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Row.cs" Line="71" Column="21" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="52" Column="9" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Arranger\RandomRowFiller.cs" Line="5" Column="2" />
       <File FileName="Assets\Code\Logic\Ball\Rows\RowFactory.cs" Line="14" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\GridUtils.cs" Line="19" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="8" Column="39" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowLongMoveClip.cs" Line="7" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowMoveClip.cs" Line="8" Column="32" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="5" Column="2" />
-      <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="7" Column="2" />
-      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\AlgebraAnimator.cs" Line="18" Column="5" />
-      <File FileName="Assets\Code\Logic\Ball\Clips\ClipFactory.cs" Line="7" Column="34" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\GridUtils.cs" Line="7" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\RowAnimator.cs" Line="48" Column="5" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowLongMoveClip.cs" Line="19" Column="5" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClips\RowMoveClip.cs" Line="91" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ActClip.cs" Line="48" Column="1" />
+      <File FileName="Assets\Code\FrameWork\TFactory.cs" Line="38" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallComponents\Animators\AlgebraAnimator.cs" Line="19" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Clips\ClipFactory.cs" Line="8" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\RowList.cs" Line="17" Column="3" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Arranger\IRowBallFiller.cs" Line="5" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\Ball\Grids\Grid.cs" line="55" />
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\Logic\Ball\Grids\Grid.cs" line="54" />
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\FrameWork\TFactory.cs" line="36" />
-      <Breakpoint file="E:\GitHub\Creator\Assets\Code\FrameWork\TFactory.cs" line="38" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

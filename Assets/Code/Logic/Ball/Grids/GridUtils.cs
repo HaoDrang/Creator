@@ -19,6 +19,13 @@ namespace Game.Logic
 			return Configs.BALL_SIZE.y * (i + 1);
 			//throw new System.NotImplementedException ();
 		}
+
+		public static void SetRowPreparePos (Row r, int i)
+		{
+			Vector3 pos = r.transform.localPosition;
+			pos.y += Configs.BALL_SIZE.y * i;
+			r.transform.localPosition = pos;
+		}
 	}
 }
 

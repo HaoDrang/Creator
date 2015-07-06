@@ -11,7 +11,7 @@ namespace Game.Logic
 		}
 
 		#region IRowBallCreate implementation
-		void IRowBallFiller.CreateRandomBalls (Row curRow, GridBallFactory generator, LevelConfig conf, IRowArrangeBall arrange)
+		void IRowBallFiller.CreateBall (Row curRow, GridBallFactory generator, LevelConfig conf, IRowArrangeBall arrange)
 		{
 			UnityEngine.Transform trans = curRow.transform;
 			int emptyChance = conf.mEmptyOdds;
