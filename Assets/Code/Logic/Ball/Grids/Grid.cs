@@ -49,6 +49,11 @@ namespace Game.Logic
 			Renumber ();
 		}
 
+		virtual void PushRow()
+		{
+			StartCoroutine ();
+		}
+
 		protected IEnumerator CreateRowList(int num)
 		{
 			mbCreatingRow = true;

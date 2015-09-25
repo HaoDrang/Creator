@@ -16,6 +16,16 @@ public class TestGrid : MonoBehaviour {
 
 	public void OnClick()
 	{
+		AddRow ();
+	}
+
+	void AddRow()
+	{
 		grid.AddRow (10);
+	}
+
+	void CreateNewRow()
+	{
+		grid.AddRow (null, true);
 	}
 }

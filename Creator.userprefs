@@ -4,11 +4,18 @@
     <Files>
       <File FileName="Assets\Code\Logic\Ball\Rows\Arranger\RandomRowFiller.cs" Line="47" Column="42" />
       <File FileName="Assets\Code\Logic\BallLogic\BallDisposes\BallGrid.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="57" Column="22" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\Grid.cs" Line="56" Column="3" />
       <File FileName="Assets\Code\Logic\Ball\Grids\IRowList.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\ReverseList.cs" Line="17" Column="13" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\RowList.cs" Line="17" Column="3" />
-      <File FileName="Assets\Code\Logic\Ball\Grids\GridUtils.cs" Line="7" Column="50" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\ReverseList.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\RowList.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Grids\GridUtils.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Rows\Arranger\RegularRowArranger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\NormalBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\SuperBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallFactories\BallFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallFactories\GridBallFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Logic\Ball\Balls\BallFactories\ShooterBallFactory.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\Test\TestGrid.cs" Line="29" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

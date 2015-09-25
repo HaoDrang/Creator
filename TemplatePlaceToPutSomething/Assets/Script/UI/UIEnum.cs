@@ -1,0 +1,4 @@
+public enum UIEnum
+{
+	WordScrollView,
+}
